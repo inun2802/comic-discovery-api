@@ -1,0 +1,88 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Publisher {
+  id         String      @id @default(cuid())
+  name       String      @unique
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+
+  characters Character[]
+  series     Series[]
+}
+
+model Character {
+  id          String            @id @default(cuid())
+  name        String
+  description String?
+  publisherId String
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+
+  publisher   Publisher         @relation(fields: [publisherId], references: [id])
+  jumpingOff  JumpingOffPoint[]
+  issueLinks  IssueCharacter[]
+
+  @@unique([publisherId, name])
+  @@index([name])
+}
+
+model Series {
+  id          String     @id @default(cuid())
+  title       String
+  publisherId String
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  publisher   Publisher  @relation(fields: [publisherId], references: [id])
+  issues      Issue[]
+
+  @@unique([publisherId, title])
+  @@index([title])
+}
+
+model Issue {
+  id              String           @id @default(cuid())
+  seriesId        String
+  issueNumber     String?
+  title           String?
+  releaseDate     DateTime?
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+
+  series          Series            @relation(fields: [seriesId], references: [id])
+  characterLinks  IssueCharacter[]
+
+  @@index([releaseDate])
+}
+
+model IssueCharacter {
+  issueId     String
+  characterId String
+  role        String?
+
+  issue       Issue     @relation(fields: [issueId], references: [id])
+  character   Character @relation(fields: [characterId], references: [id])
+
+  @@id([issueId, characterId])
+}
+
+model JumpingOffPoint {
+  id          String    @id @default(cuid())
+  characterId String
+  title       String
+  blurb       String?
+  tier        String?
+  order       Int       @default(0)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  character   Character @relation(fields: [characterId], references: [id])
+
+  @@index([characterId])
+}
