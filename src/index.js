@@ -2,6 +2,8 @@ import express from "express";
 import { prisma } from "./prisma.js";
 import charactersRoutes from "./routes/characters.routes.js";
 import publishersRoutes from "./routes/publishers.routes.js";
+import issuesRoutes from "./routes/issues.routes.js";
+import seriesRoutes from "./routes/series.routes.js";
 
 const app = express();
 app.use(express.json());
@@ -17,11 +19,11 @@ app.get("/health", (req, res) => {
   res.status(200).json({ ok: true, message: "Comic Discovery API is running" });
 });
 
-// Character routes
+//  routes
 app.use("/api/characters", charactersRoutes);
-
-// Publisher routes
 app.use("/api/publishers", publishersRoutes);
+app.use("/api/issues", issuesRoutes);
+app.use("/api/series", seriesRoutes);
 
 app.get("/api/seed-more", async (req, res) => {
   try {
