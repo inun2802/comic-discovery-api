@@ -1,6 +1,7 @@
 import express from "express";
 import { prisma } from "./prisma.js";
 import charactersRoutes from "./routes/characters.routes.js";
+import publishersRoutes from "./routes/publishers.routes.js";
 
 const app = express();
 app.use(express.json());
@@ -18,6 +19,9 @@ app.get("/health", (req, res) => {
 
 // Character routes
 app.use("/api/characters", charactersRoutes);
+
+// Publisher routes
+app.use("/api/publishers", publishersRoutes);
 
 app.get("/api/seed-more", async (req, res) => {
   try {
@@ -132,31 +136,6 @@ app.get("/api/test-seed", async (req, res) => {
       code: error.code || null,
       meta: error.meta || null,
     });
-  }
-});
-
-app.post("/api/publishers", async (req, res) => {
-  try {
-    const { id, name } = req.body;
-
-    if (!id || !name) {
-      return res.status(400).json({
-        error: "id and name are required",
-      });
-    }
-
-    const publisher = await prisma.publisher.create({
-      data: {
-        id,
-        name,
-        updatedAt: new Date(),
-      },
-    });
-
-    res.status(201).json(publisher);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: error.message });
   }
 });
 
