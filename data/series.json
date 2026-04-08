@@ -1,0 +1,22 @@
+[
+    {
+        "id": "asm",
+        "title": "The Amazing Spider-Man",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "batman-year-one",
+        "title": "Batman: Year One",
+        "publisherId": "dc"
+    },
+    {
+        "id": "invincible-series",
+        "title": "Invincible",
+        "publisherId": "image"
+    },
+    {
+        "id": "hellboy-series",
+        "title": "Hellboy",
+        "publisherId": "darkhorse"
+    }
+]

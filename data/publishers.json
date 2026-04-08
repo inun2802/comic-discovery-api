@@ -1,0 +1,6 @@
+[
+  { "id": "marvel", "name": "Marvel" },
+  { "id": "dc", "name": "DC" },
+  { "id": "image", "name": "Image" },
+  { "id": "darkhorse", "name": "Dark Horse" }
+]

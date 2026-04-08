@@ -5,7 +5,8 @@
   "description": "A library of comic books from Marvel, DC, Image, and Dark Horse. Used for the sole purpose of allowing new and existing comic book related nerds to delve into the characters, stories, and overall universe.",
   "main": "index.js",
   "scripts": {
-    "dev": "node src/index.js"
+    "dev": "node src/index.js",
+    "import:data": "node scripts/importData.js"
   },
   "repository": {
     "type": "git",

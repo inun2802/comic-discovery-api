@@ -1,0 +1,26 @@
+[
+    {
+        "id": "spiderman",
+        "name": "Spider-Man",
+        "description": "Your Friendly neighborhood Spider-Man",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "batman",
+        "name": "Batman",
+        "description": "The Dark Knight of Gotham",
+        "publisherId": "dc"
+    },
+    {
+        "id": "invincible",
+        "name": "Invincible",
+        "description": "Teenage Viltumite",
+        "publisherId": "image"
+    },
+    {
+        "id": "hellboy",
+        "name": "Hellboy",
+        "description": "Half-demon from the B.P.R.D.",
+        "publisherId": "darkhorse"
+    }
+]
