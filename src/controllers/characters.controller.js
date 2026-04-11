@@ -108,3 +108,196 @@ export async function createCharacter(req, res) {
     res.status(500).json({ error: error.message });
   }
 }
+
+export async function getCharacterSeries(req, res) {
+  try {
+    const links = await prisma.issueCharacter.findMany({
+      where: {
+        characterId: req.params.id,
+      },
+      include: {
+        issue: {
+          include: {
+            series: true,
+          },
+        },
+      },
+    });
+
+    const uniqueSeriesMap = new Map();
+
+    for (const link of links) {
+      const series = link.issue?.series;
+      if (series && !uniqueSeriesMap.has(series.id)) {
+        uniqueSeriesMap.set(series.id, series);
+      }
+    }
+
+    res.json(Array.from(uniqueSeriesMap.values()));
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+}
+
+export async function getCharacterKeyIssues(req, res) {
+  try {
+    const links = await prisma.issueCharacter.findMany({
+      where: {
+        characterId: req.params.id,
+        issue: {
+          isKeyIssue: true,
+        },
+      },
+      include: {
+        issue: {
+          include: {
+            series: true,
+          },
+        },
+      },
+    });
+
+    const issues = links.map((link) => link.issue);
+
+    res.json(issues);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+}
+
+export async function getCharacterFirstAppearances(req, res) {
+  try {
+    const links = await prisma.issueCharacter.findMany({
+      where: {
+        characterId: req.params.id,
+        issue: {
+          isFirstAppearance: true,
+        },
+      },
+      include: {
+        issue: {
+          include: {
+            series: true,
+          },
+        },
+      },
+    });
+
+    const issues = links.map((link) => link.issue);
+
+    res.json(issues);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+}
+
+export async function getCharacterMajorCrossovers(req, res) {
+  try {
+    const links = await prisma.issueCharacter.findMany({
+      where: {
+        characterId: req.params.id,
+        issue: {
+          isMajorCrossover: true,
+        },
+      },
+      include: {
+        issue: {
+          include: {
+            series: true,
+          },
+        },
+      },
+      orderBy: {
+        issue: {
+          releaseDate: "asc",
+        },
+      },
+    });
+
+    const issues = links.map((link) => link.issue);
+
+    res.json(issues);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+}
+
+export async function getCharacterSupportingCast(req, res) {
+  try {
+    const links = await prisma.issueCharacter.findMany({
+      where: {
+        characterId: req.params.id,
+      },
+      include: {
+        issue: {
+          include: {
+            characterLinks: {
+              include: {
+                character: true,
+              },
+            },
+          },
+        },
+      },
+    });
+
+    const supportingMap = new Map();
+
+    for (const link of links) {
+      const characterLinks = link.issue?.characterLinks || [];
+
+      for (const relatedLink of characterLinks) {
+        const relatedCharacter = relatedLink.character;
+
+        if (!relatedCharacter) continue;
+        if (relatedCharacter.id === req.params.id) continue;
+        if (relatedLink.role !== "supporting") continue;
+
+        if (!supportingMap.has(relatedCharacter.id)) {
+          supportingMap.set(relatedCharacter.id, relatedCharacter);
+        }
+      }
+    }
+
+    res.json(Array.from(supportingMap.values()));
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+}
+
+export async function getCharacterReadingOrder(req, res) {
+  try {
+    const links = await prisma.issueCharacter.findMany({
+      where: {
+        characterId: req.params.id,
+        issue: {
+          isKeyIssue: true,
+        },
+      },
+      include: {
+        issue: {
+          include: {
+            series: true,
+          },
+        },
+      },
+      orderBy: {
+        issue: {
+          releaseDate: "asc",
+        },
+      },
+    });
+
+    const issues = links.map((link) => link.issue);
+
+    res.json(issues);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+}

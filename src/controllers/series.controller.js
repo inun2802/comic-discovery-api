@@ -40,3 +40,27 @@ export async function getAllSeries(req, res) {
     res.status(500).json({ error: error.message });
   }
 }
+
+export async function getSeriesIssues(req, res) {
+  try {
+    const series = await prisma.series.findUnique({
+      where: { id: req.params.id },
+      include: {
+        issues: {
+          orderBy: {
+            releaseDate: "asc",
+          },
+        },
+      },
+    });
+
+    if (!series) {
+      return res.status(404).json({ error: "Series not found" });
+    }
+
+    res.json(series.issues);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+}
