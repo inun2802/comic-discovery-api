@@ -7,7 +7,7 @@ The first version of this project includes:
 - List comic book characters from Marvel, DC, Image, and Dark Horse
 - Provide their comic book issues dating back to their original appearance
 - Provide curated "jumping-off points" for characters
-- Show different depictions/iterations of a character (by era or creator)
+- Show different depictions/iterations of a character by era (ie. writer/penciler/inker)
 - Present connected story arcs and crossovers as ordered reading lists
 - Highlight alternate universes (Ultimate, Absolute, What If, Elseworlds)
 
