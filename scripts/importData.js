@@ -140,11 +140,13 @@ async function main() {
       },
       update: {
         role: link.role ?? null,
+        isFirstAppearance: link.isFirstAppearance ?? false,
       },
       create: {
         issueId: link.issueId,
         characterId: link.characterId,
         role: link.role ?? null,
+        isFirstAppearance: link.isFirstAppearance ?? false,
       },
     });
   }

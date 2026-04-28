@@ -807,13 +807,19 @@ async function openCharacter(id) {
       ? `<div class="ro-list">${readingOrder.map((iss, i) => {
           const date = iss.releaseDate ? new Date(iss.releaseDate).getFullYear() : '';
           const series = iss.series || {};
+
+          const firstApps = (iss.characterLinks || []).filter(l => l.isFirstAppearance);
+          const firstAppNames = firstApps.map(l => l.character.name).join(', ');
+
           return `<div class="ro-item">
             <div class="ro-n">${String(i+1).padStart(2,'0')}</div>
             <div class="ro-info">
               <div class="ro-title">${iss.title || 'Untitled'}</div>
               <div class="ro-sub">${series.title||''} #${iss.issueNumber||'?'} · ${date}</div>
-              ${renderIssueBadges(iss)}
+              ${iss.isKeyIssue ? `<span class="badge badge-key">Key issue</span>` : ''}
+              ${iss.isMajorCrossover ? `<span class="badge badge-cross">Crossover</span>` : ''}
             </div>
+            ${firstAppNames ? `<div style="font-size:11px;color:var(--success);font-weight:500;text-align:right;min-width:140px;flex-shrink:0">1st: ${firstAppNames}</div>` : ''}
           </div>`;
         }).join('')}</div>`
       : `<p class="empty">No reading order data yet. Add key issues with this character via the import script.</p>`;
