@@ -24,6 +24,18 @@
         "publisherId": "marvel"
     },
     {
+        "id": "liz-allen",
+        "name": "Liz Allen",
+        "description": "Peter Parker's high school crush",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "flash-thompson",
+        "name": "Flash Thompson",
+        "description": "Peter Parker's high school bully and eventual friend",
+        "publisherId": "marvel"
+    },
+    {
         "id": "aunt-may",
         "name": "Aunt May",
         "description": "Peter Parker's loving aunt",
@@ -42,15 +54,64 @@
         "publisherId": "marvel"
     },
     {
+        "id": "john-jameson",
+        "name": "John Jameson",
+        "description": "World renowned astronaut and son of J. Jonah Jameson. Later becomes Man Wolf",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "chameleon",
+        "name": "Chameleon",
+        "description": "A supervillain known for his ability to change his appearance. Brother of Kraven the Hunter",
+        "publisherId": "marvel"
+    },
+    {
         "id": "norman-osborn",
         "name": "Norman Osborn",
-        "description": "The Green Goblin, one of Spider-Man's greatest foes",
+        "description": "CEO of Oscorp. The Green Goblin. One of Spider-Man's greatest foes",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "burglar",
+        "name": "Burglar",
+        "description": "The man responsible for the murder of Uncle Ben",
         "publisherId": "marvel"
     },
     {
         "id": "black-cat",
         "name": "Black Cat",
         "description": "The Black Cat, one of Spider-Man's most puzzling love interests",
+        "publisherId": "marvel"
+    },
+
+
+
+
+
+
+    {
+        "id": "mister-fantastic",
+        "name": "Mister Fantastic",
+        "description": "Reed Richards, The leader of the Fantastic Four",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "invisible-woman",
+        "name": "Invisible Woman",
+        "description": "Susan Storm, First lady of Marvel and of the Fantastic Four",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "human-torch",
+        "name": "Human Torch",
+        "description": "Johnny Storm, The hot headed younger brother Sue Storm",
+        "publisherId": "marvel"
+    },
+
+    {
+        "id": "thing",
+        "name": "Thing",
+        "description": "Ben Grimm, The strongest member of the Fantastic Four",
         "publisherId": "marvel"
     },
     {
