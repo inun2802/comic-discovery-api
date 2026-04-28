@@ -20,7 +20,7 @@
     {
         "id": "harry-osborn",
         "name": "Harry Osborn",
-        "description": "Peter Parker's best friend",
+        "description": "Peter Parker's best friend and eventual foe",
         "publisherId": "marvel"
     },
     {
@@ -53,7 +53,6 @@
         "description": "The Black Cat, one of Spider-Man's most puzzling love interests",
         "publisherId": "marvel"
     },
-
     {
         "id": "batman",
         "name": "Batman",
