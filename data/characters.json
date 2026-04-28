@@ -78,6 +78,18 @@
         "publisherId": "marvel"
     },
     {
+        "id": "vulture",
+        "name": "Vulture",
+        "description": "Adrian Toomes, An elderly engineer who uses a special harness to fly and commit crime",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "tinkerer",
+        "name": "Tinkerer",
+        "description": "Phineas Mason, A brilliant inventor who creates gadgets for supervillains",
+        "publisherId": "marvel"
+    }, 
+    {
         "id": "burglar",
         "name": "Burglar",
         "description": "The man responsible for the murder of Uncle Ben",
