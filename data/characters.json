@@ -72,6 +72,12 @@
         "publisherId": "marvel"
     },
     {
+        "id": "doc-ock",
+        "name": "Doctor Octopus",
+        "description": "Otto Octavius, A brilliant scientist with four mechanical arms fused to his body",
+        "publisherId": "marvel"
+    },
+    {
         "id": "burglar",
         "name": "Burglar",
         "description": "The man responsible for the murder of Uncle Ben",
