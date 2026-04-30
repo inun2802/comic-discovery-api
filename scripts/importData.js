@@ -23,20 +23,45 @@ async function readJsonOptional(filename) {
   }
 }
 
+async function readJsonFromDirs(filename) {
+  const entries = await fs.readdir(dataDir, { withFileTypes: true });
+  const dirs = entries.filter(e => e.isDirectory()).map(e => e.name);
+  
+  let results = [];
+  
+  // read from root data dir first
+  try {
+    const root = await readJson(filename);
+    results = results.concat(root);
+  } catch {}
+
+  // then read from each character/series subdirectory
+  for (const dir of dirs) {
+    try {
+      const filePath = path.join(dataDir, dir, filename);
+      const raw = await fs.readFile(filePath, "utf-8");
+      const data = JSON.parse(raw);
+      results = results.concat(data);
+    } catch {}
+  }
+
+  return results;
+}
+
 async function main() {
   const now = new Date();
 
   const publishers      = await readJson("publishers.json");
   const characters      = await readJson("characters.json");
   const series          = await readJson("series.json");
-  const issues          = await readJson("issues.json");
-  const jumpingOffPoints = await readJson("jumpingOffPoints.json");
-  const issueCharacters = await readJson("issueCharacters.json");
-  const teams           = await readJsonOptional("teams.json");
-  const teamMembers     = await readJsonOptional("teamMembers.json");
-  const issueTeams      = await readJsonOptional("issueTeams.json");
-  const storyArcs       = await readJsonOptional("storyArcs.json");
-  const storyArcIssues  = await readJsonOptional("storyArcIssues.json");
+  const issues           = await readJsonFromDirs("issues.json");
+  const jumpingOffPoints = await readJsonFromDirs("jumpingOffPoints.json");
+  const issueCharacters  = await readJsonFromDirs("issueCharacters.json");
+  const teams            = await readJsonFromDirs("teams.json");
+  const teamMembers      = await readJsonFromDirs("teamMembers.json");
+  const issueTeams       = await readJsonFromDirs("issueTeams.json");
+  const storyArcs        = await readJsonFromDirs("storyArcs.json");
+  const storyArcIssues   = await readJsonFromDirs("storyArcIssues.json");
 
   for (const publisher of publishers) {
     await prisma.publisher.upsert({
