@@ -13,43 +13,43 @@ async function readJson(filename) {
   return JSON.parse(raw);
 }
 
+async function readJsonOptional(filename) {
+  try {
+    const filePath = path.join(dataDir, filename);
+    const raw = await fs.readFile(filePath, "utf-8");
+    return JSON.parse(raw);
+  } catch {
+    return [];
+  }
+}
+
 async function main() {
   const now = new Date();
 
-  const publishers = await readJson("publishers.json");
-  const characters = await readJson("characters.json");
-  const series = await readJson("series.json");
-  const issues = await readJson("issues.json");
+  const publishers      = await readJson("publishers.json");
+  const characters      = await readJson("characters.json");
+  const series          = await readJson("series.json");
+  const issues          = await readJson("issues.json");
   const jumpingOffPoints = await readJson("jumpingOffPoints.json");
   const issueCharacters = await readJson("issueCharacters.json");
+  const teams           = await readJsonOptional("teams.json");
+  const teamMembers     = await readJsonOptional("teamMembers.json");
+  const issueTeams      = await readJsonOptional("issueTeams.json");
+  const storyArcs       = await readJsonOptional("storyArcs.json");
+  const storyArcIssues  = await readJsonOptional("storyArcIssues.json");
 
   for (const publisher of publishers) {
     await prisma.publisher.upsert({
       where: { name: publisher.name },
-      update: {
-        name: publisher.name,
-        updatedAt: now,
-      },
-      create: {
-        id: publisher.id,
-        name: publisher.name,
-        updatedAt: now,
-      },
+      update: { name: publisher.name, updatedAt: now },
+      create: { id: publisher.id, name: publisher.name, updatedAt: now },
     });
   }
 
   for (const character of characters) {
     await prisma.character.upsert({
-      where: {
-        publisherId_name: {
-          publisherId: character.publisherId,
-          name: character.name,
-        },
-      },
-      update: {
-        description: character.description ?? null,
-        updatedAt: now,
-      },
+      where: { publisherId_name: { publisherId: character.publisherId, name: character.name } },
+      update: { description: character.description ?? null, updatedAt: now },
       create: {
         id: character.id,
         name: character.name,
@@ -62,21 +62,9 @@ async function main() {
 
   for (const item of series) {
     await prisma.series.upsert({
-      where: {
-        publisherId_title: {
-          publisherId: item.publisherId,
-          title: item.title,
-        },
-      },
-      update: {
-        updatedAt: now,
-      },
-      create: {
-        id: item.id,
-        title: item.title,
-        publisherId: item.publisherId,
-        updatedAt: now,
-      },
+      where: { publisherId_title: { publisherId: item.publisherId, title: item.title } },
+      update: { updatedAt: now },
+      create: { id: item.id, title: item.title, publisherId: item.publisherId, updatedAt: now },
     });
   }
 
@@ -111,13 +99,7 @@ async function main() {
   for (const point of jumpingOffPoints) {
     await prisma.jumpingOffPoint.upsert({
       where: { id: point.id },
-      update: {
-        title: point.title,
-        blurb: point.blurb ?? null,
-        tier: point.tier ?? null,
-        order: point.order ?? 0,
-        updatedAt: now,
-      },
+      update: { title: point.title, blurb: point.blurb ?? null, tier: point.tier ?? null, order: point.order ?? 0, updatedAt: now },
       create: {
         id: point.id,
         characterId: point.characterId,
@@ -132,22 +114,68 @@ async function main() {
 
   for (const link of issueCharacters) {
     await prisma.issueCharacter.upsert({
-      where: {
-        issueId_characterId: {
-          issueId: link.issueId,
-          characterId: link.characterId,
-        },
-      },
-      update: {
-        role: link.role ?? null,
-        isFirstAppearance: link.isFirstAppearance ?? false,
-      },
+      where: { issueId_characterId: { issueId: link.issueId, characterId: link.characterId } },
+      update: { role: link.role ?? null, isFirstAppearance: link.isFirstAppearance ?? false },
       create: {
         issueId: link.issueId,
         characterId: link.characterId,
         role: link.role ?? null,
         isFirstAppearance: link.isFirstAppearance ?? false,
       },
+    });
+  }
+
+  // ── TEAMS ──
+  for (const team of teams) {
+    await prisma.team.upsert({
+      where: { publisherId_name: { publisherId: team.publisherId, name: team.name } },
+      update: { description: team.description ?? null, updatedAt: now },
+      create: {
+        id: team.id,
+        name: team.name,
+        description: team.description ?? null,
+        publisherId: team.publisherId,
+        updatedAt: now,
+      },
+    });
+  }
+
+  for (const member of teamMembers) {
+    await prisma.teamMember.upsert({
+      where: { teamId_characterId: { teamId: member.teamId, characterId: member.characterId } },
+      update: {},
+      create: { teamId: member.teamId, characterId: member.characterId },
+    });
+  }
+
+  for (const link of issueTeams) {
+    await prisma.issueTeam.upsert({
+      where: { issueId_teamId: { issueId: link.issueId, teamId: link.teamId } },
+      update: { role: link.role ?? null },
+      create: { issueId: link.issueId, teamId: link.teamId, role: link.role ?? null },
+    });
+  }
+
+  // ── STORY ARCS ──
+  for (const arc of storyArcs) {
+    await prisma.storyArc.upsert({
+      where: { publisherId_title: { publisherId: arc.publisherId, title: arc.title } },
+      update: { description: arc.description ?? null, updatedAt: now },
+      create: {
+        id: arc.id,
+        title: arc.title,
+        description: arc.description ?? null,
+        publisherId: arc.publisherId,
+        updatedAt: now,
+      },
+    });
+  }
+
+  for (const link of storyArcIssues) {
+    await prisma.storyArcIssue.upsert({
+      where: { storyArcId_issueId: { storyArcId: link.storyArcId, issueId: link.issueId } },
+      update: { order: link.order ?? 0 },
+      create: { storyArcId: link.storyArcId, issueId: link.issueId, order: link.order ?? 0 },
     });
   }
 

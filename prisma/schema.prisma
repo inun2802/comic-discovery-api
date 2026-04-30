@@ -14,6 +14,8 @@ model Publisher {
 
   characters Character[]
   series     Series[]
+  teams      Team[]
+  storyArcs  StoryArc[]
 }
 
 model Character {
@@ -27,6 +29,7 @@ model Character {
   publisher   Publisher         @relation(fields: [publisherId], references: [id])
   jumpingOff  JumpingOffPoint[]
   issueLinks  IssueCharacter[]
+  teamLinks   TeamMember[]
 
   @@unique([publisherId, name])
   @@index([name])
@@ -47,35 +50,34 @@ model Series {
 }
 
 model Issue {
-  id              String           @id @default(cuid())
-  seriesId        String
-  issueNumber     String?
-  title           String?
-  releaseDate     DateTime?
-  
-  universe          String? // "main", "ultimate", "absolute"
-  isFirstAppearance Boolean        @default(false)
-  isMajorCrossover  Boolean        @default(false)
-  isKeyIssue        Boolean        @default(false)
+  id                String           @id @default(cuid())
+  seriesId          String
+  issueNumber       String?
+  title             String?
+  releaseDate       DateTime?
+  universe          String?          // "main", "ultimate", "absolute"
+  isFirstAppearance Boolean          @default(false)
+  isMajorCrossover  Boolean          @default(false)
+  isKeyIssue        Boolean          @default(false)
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
 
-
-  createdAt       DateTime         @default(now())
-  updatedAt       DateTime         @updatedAt
-
-  series          Series            @relation(fields: [seriesId], references: [id])
-  characterLinks  IssueCharacter[]
+  series            Series           @relation(fields: [seriesId], references: [id])
+  characterLinks    IssueCharacter[]
+  teamLinks         IssueTeam[]
+  storyArcLinks     StoryArcIssue[]
 
   @@index([releaseDate])
 }
 
 model IssueCharacter {
-  issueId     String
-  characterId String
-  role        String?   // "main", "supporting", "villian"
+  issueId           String
+  characterId       String
+  role              String?          // "main", "supporting", "villain", "guest"
+  isFirstAppearance Boolean          @default(false)
 
-  issue       Issue     @relation(fields: [issueId], references: [id])
-  character   Character @relation(fields: [characterId], references: [id])
-  isFirstAppearance Boolean        @default(false)
+  issue             Issue            @relation(fields: [issueId], references: [id])
+  character         Character        @relation(fields: [characterId], references: [id])
 
   @@id([issueId, characterId])
 }
@@ -93,4 +95,67 @@ model JumpingOffPoint {
   character   Character @relation(fields: [characterId], references: [id])
 
   @@index([characterId])
+}
+
+model Team {
+  id          String       @id @default(cuid())
+  name        String
+  description String?
+  publisherId String
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  publisher   Publisher    @relation(fields: [publisherId], references: [id])
+  members     TeamMember[]
+  issueLinks  IssueTeam[]
+
+  @@unique([publisherId, name])
+  @@index([name])
+}
+
+model TeamMember {
+  teamId      String
+  characterId String
+
+  team        Team      @relation(fields: [teamId], references: [id])
+  character   Character @relation(fields: [characterId], references: [id])
+
+  @@id([teamId, characterId])
+}
+
+model IssueTeam {
+  issueId    String
+  teamId     String
+  role       String?   // "main", "guest", "villain"
+
+  issue      Issue     @relation(fields: [issueId], references: [id])
+  team       Team      @relation(fields: [teamId], references: [id])
+
+  @@id([issueId, teamId])
+}
+
+model StoryArc {
+  id          String          @id @default(cuid())
+  title       String
+  description String?
+  publisherId String
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+
+  publisher   Publisher       @relation(fields: [publisherId], references: [id])
+  issues      StoryArcIssue[]
+
+  @@unique([publisherId, title])
+  @@index([title])
+}
+
+model StoryArcIssue {
+  storyArcId  String
+  issueId     String
+  order       Int      @default(0)
+
+  storyArc    StoryArc @relation(fields: [storyArcId], references: [id])
+  issue       Issue    @relation(fields: [issueId], references: [id])
+
+  @@id([storyArcId, issueId])
 }
