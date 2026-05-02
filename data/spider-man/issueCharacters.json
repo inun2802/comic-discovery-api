@@ -14,10 +14,10 @@
     { "issueId": "asm-1",            "characterId": "liz-allen",       "role": "supporting"},
     { "issueId": "asm-1",            "characterId": "burglar",         "role": "villain"},
     { "issueId": "asm-1",            "characterId": "chameleon",       "role": "villain",          "isFirstAppearance": true },
-    { "issueId": "asm-1",            "characterId": "mister-fantastic","role": "supporting"},
-    { "issueId": "asm-1",            "characterId": "invisible-woman", "role": "supporting"},
-    { "issueId": "asm-1",            "characterId": "human-torch",     "role": "supporting"},
-    { "issueId": "asm-1",            "characterId": "thing",           "role": "supporting"},
+    { "issueId": "asm-1",            "characterId": "mister-fantastic","role": "guest"},
+    { "issueId": "asm-1",            "characterId": "invisible-woman", "role": "guest"},
+    { "issueId": "asm-1",            "characterId": "human-torch",     "role": "guest"},
+    { "issueId": "asm-1",            "characterId": "thing",           "role": "guest"},
 
     { "issueId": "asm-2",            "characterId": "spiderman",       "role": "main" },
     { "issueId": "asm-2",            "characterId": "j-j-jameson",     "role": "supporting" },
@@ -34,7 +34,7 @@
     { "issueId": "asm-3",            "characterId": "aunt-may",        "role": "supporting"},
     { "issueId": "asm-3",            "characterId": "flash-thompson",  "role": "supporting"},
     { "issueId": "asm-3",            "characterId": "liz-allen",       "role": "supporting"},
-    { "issueId": "asm-3",            "characterId": "human-torch",     "role": "supporting"},
+    { "issueId": "asm-3",            "characterId": "human-torch",     "role": "guest"},
 
     { "issueId": "asm-4",            "characterId": "spiderman",       "role": "main" },
     { "issueId": "asm-4",            "characterId": "sandman",         "role": "villain",          "isFirstAppearance": true },
@@ -44,69 +44,719 @@
     { "issueId": "asm-4",            "characterId": "flash-thompson",  "role": "supporting"},
     { "issueId": "asm-4",            "characterId": "liz-allen",       "role": "supporting"},
     
+    { "issueId": "asm-5",  "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-5",  "characterId": "doctor-doom",   "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-5",  "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-5",  "characterId": "flash-thompson","role": "supporting" },
+    { "issueId": "asm-5",  "characterId": "liz-allen",     "role": "supporting" },
+    { "issueId": "asm-5",  "characterId": "betty-brant",   "role": "supporting" },
 
-    { "issueId": "asm-6",            "characterId": "spiderman",       "role": "main" },
+    { "issueId": "asm-6",  "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-6",  "characterId": "lizard",        "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-6",  "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-6",  "characterId": "betty-brant",   "role": "supporting" },
 
-    { "issueId": "asm-9",            "characterId": "spiderman",       "role": "main" },
-    { "issueId": "asm-9",            "characterId": "j-j-jameson",     "role": "supporting" },
+    { "issueId": "asm-7",  "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-7",  "characterId": "vulture",       "role": "villain" },
+    { "issueId": "asm-7",  "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-7",  "characterId": "betty-brant",   "role": "supporting" },
 
-    { "issueId": "asm-13",           "characterId": "spiderman",       "role": "main" },
+    { "issueId": "asm-8",  "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-8",  "characterId": "living-brain",  "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-8",  "characterId": "flash-thompson","role": "supporting" },
+    { "issueId": "asm-8",  "characterId": "liz-allen",     "role": "supporting" },
+    { "issueId": "asm-8",  "characterId": "j-j-jameson",   "role": "supporting" },
 
-    { "issueId": "asm-14",           "characterId": "spiderman",       "role": "main" },
-    { "issueId": "asm-14",           "characterId": "norman-osborn",   "role": "villain" },
+    { "issueId": "asm-9",  "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-9",  "characterId": "electro",       "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-9",  "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-9",  "characterId": "betty-brant",   "role": "supporting" },
 
-    { "issueId": "asm-15",           "characterId": "spiderman",       "role": "main" },
+    { "issueId": "asm-10", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-10", "characterId": "big-man",       "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-10", "characterId": "enforcers",     "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-10", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-10", "characterId": "betty-brant",   "role": "supporting" },
+    { "issueId": "asm-10", "characterId": "flash-thompson","role": "supporting" },
 
-    { "issueId": "asm-17",           "characterId": "spiderman",       "role": "main" },
-    { "issueId": "asm-17",           "characterId": "norman-osborn",   "role": "villain" },
+    { "issueId": "asm-11", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-11", "characterId": "doc-ock",       "role": "villain" },
+    { "issueId": "asm-11", "characterId": "betty-brant",   "role": "supporting" },
+    { "issueId": "asm-11", "characterId": "j-j-jameson",   "role": "supporting" },
 
-    { "issueId": "asm-20",           "characterId": "spiderman",       "role": "main" },
-    { "issueId": "asm-20",           "characterId": "j-j-jameson",     "role": "supporting" },
+    { "issueId": "asm-12", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-12", "characterId": "doc-ock",       "role": "villain" },
+    { "issueId": "asm-12", "characterId": "betty-brant",   "role": "supporting" },
+    { "issueId": "asm-12", "characterId": "j-j-jameson",   "role": "supporting" },
 
-    { "issueId": "asm-25",           "characterId": "spiderman",       "role": "main" },
-    { "issueId": "asm-25",           "characterId": "mary-jane-watson", "role": "supporting" },
+    { "issueId": "asm-13", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-13", "characterId": "mysterio",      "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-13", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-13", "characterId": "betty-brant",   "role": "supporting" },
 
-    { "issueId": "asm-28",           "characterId": "spiderman",       "role": "main" },
+    { "issueId": "asm-14", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-14", "characterId": "norman-osborn", "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-14", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-14", "characterId": "betty-brant",   "role": "supporting" },
+    { "issueId": "asm-14", "characterId": "flash-thompson","role": "supporting" },
+    { "issueId": "asm-14", "characterId": "human-torch",   "role": "guest" },
 
-    { "issueId": "asm-31",           "characterId": "spiderman",       "role": "main" },
-    { "issueId": "asm-31",           "characterId": "gwen-stacy",      "role": "supporting" },
-    { "issueId": "asm-31",           "characterId": "harry-osborn",    "role": "supporting" },
+    { "issueId": "asm-15", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-15", "characterId": "kraven",        "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-15", "characterId": "chameleon",     "role": "villain" },
+    { "issueId": "asm-15", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-15", "characterId": "betty-brant",   "role": "supporting" },
 
-    { "issueId": "asm-33",           "characterId": "spiderman",       "role": "main" },
-    { "issueId": "asm-33",           "characterId": "aunt-may",        "role": "supporting" },
+    { "issueId": "asm-16", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-16", "characterId": "daredevil",     "role": "guest",     "isFirstAppearance": true },
+    { "issueId": "asm-16", "characterId": "ringmaster",    "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-16", "characterId": "j-j-jameson",   "role": "supporting" },
 
-    { "issueId": "asm-39",           "characterId": "spiderman",       "role": "main" },
-    { "issueId": "asm-39",           "characterId": "norman-osborn",   "role": "villain" },
+    { "issueId": "asm-17", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-17", "characterId": "norman-osborn", "role": "villain" },
+    { "issueId": "asm-17", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-17", "characterId": "human-torch",   "role": "guest" },
+    { "issueId": "asm-17", "characterId": "flash-thompson","role": "supporting" },
 
-    { "issueId": "asm-40",           "characterId": "spiderman",       "role": "main" },
-    { "issueId": "asm-40",           "characterId": "norman-osborn",   "role": "villain" },
+    { "issueId": "asm-18", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-18", "characterId": "sandman",       "role": "villain" },
+    { "issueId": "asm-18", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-18", "characterId": "aunt-may",      "role": "supporting" },
+    { "issueId": "asm-18", "characterId": "flash-thompson","role": "supporting" },
 
-    { "issueId": "asm-41",           "characterId": "spiderman",       "role": "main" },
+    { "issueId": "asm-19", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-19", "characterId": "sandman",       "role": "villain" },
+    { "issueId": "asm-19", "characterId": "enforcers",     "role": "villain" },
+    { "issueId": "asm-19", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-19", "characterId": "betty-brant",   "role": "supporting" },
 
-    { "issueId": "asm-46",           "characterId": "spiderman",       "role": "main" },
+    { "issueId": "asm-20", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-20", "characterId": "scorpion",      "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-20", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-20", "characterId": "betty-brant",   "role": "supporting" },
 
-    { "issueId": "asm-50",           "characterId": "spiderman",       "role": "main" },
-    { "issueId": "asm-50",           "characterId": "j-j-jameson",     "role": "supporting" },
+    { "issueId": "asm-21", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-21", "characterId": "beetle",        "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-21", "characterId": "human-torch",   "role": "guest" },
+    { "issueId": "asm-21", "characterId": "betty-brant",   "role": "supporting" },
 
-    { "issueId": "asm-96",           "characterId": "spiderman",       "role": "main" },
-    { "issueId": "asm-96",           "characterId": "harry-osborn",    "role": "supporting" },
-    { "issueId": "asm-96",           "characterId": "norman-osborn",   "role": "villain" },
+    { "issueId": "asm-22", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-22", "characterId": "ringmaster",    "role": "villain" },
+    { "issueId": "asm-22", "characterId": "betty-brant",   "role": "supporting" },
+    { "issueId": "asm-22", "characterId": "j-j-jameson",   "role": "supporting" },
 
-    { "issueId": "asm-100",          "characterId": "spiderman",       "role": "main" },
+    { "issueId": "asm-23", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-23", "characterId": "norman-osborn", "role": "villain" },
+    { "issueId": "asm-23", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-23", "characterId": "betty-brant",   "role": "supporting" },
 
-    { "issueId": "asm-101",          "characterId": "spiderman",       "role": "main" },
+    { "issueId": "asm-24", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-24", "characterId": "mysterio",      "role": "villain" },
+    { "issueId": "asm-24", "characterId": "aunt-may",      "role": "supporting" },
+    { "issueId": "asm-24", "characterId": "betty-brant",   "role": "supporting" },
 
-    { "issueId": "asm-121",          "characterId": "spiderman",       "role": "main" },
-    { "issueId": "asm-121",          "characterId": "gwen-stacy",      "role": "supporting" },
-    { "issueId": "asm-121",          "characterId": "norman-osborn",   "role": "villain" },
+    { "issueId": "asm-25", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-25", "characterId": "spider-slayer", "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-25", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-25", "characterId": "mary-jane-watson","role": "supporting" },
+    { "issueId": "asm-25", "characterId": "aunt-may",      "role": "supporting" },
 
-    { "issueId": "asm-122",          "characterId": "spiderman",       "role": "main" },
-    { "issueId": "asm-122",          "characterId": "norman-osborn",   "role": "villain" },
-    { "issueId": "asm-122",          "characterId": "harry-osborn",    "role": "supporting" },
+    { "issueId": "asm-26", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-26", "characterId": "crime-master",  "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-26", "characterId": "norman-osborn", "role": "villain" },
+    { "issueId": "asm-26", "characterId": "betty-brant",   "role": "supporting" },
 
-    { "issueId": "asm-129",          "characterId": "spiderman",       "role": "main" },
+    { "issueId": "asm-27", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-27", "characterId": "norman-osborn", "role": "villain" },
+    { "issueId": "asm-27", "characterId": "crime-master",  "role": "villain" },
+    { "issueId": "asm-27", "characterId": "betty-brant",   "role": "supporting" },
 
-    { "issueId": "asm-149",          "characterId": "spiderman",       "role": "main" },
+    { "issueId": "asm-28", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-28", "characterId": "molten-man",    "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-28", "characterId": "liz-allen",     "role": "supporting" },
+    { "issueId": "asm-28", "characterId": "flash-thompson","role": "supporting" },
+    { "issueId": "asm-28", "characterId": "betty-brant",   "role": "supporting" },
+
+    { "issueId": "asm-29", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-29", "characterId": "scorpion",      "role": "villain" },
+    { "issueId": "asm-29", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-29", "characterId": "betty-brant",   "role": "supporting" },
+
+    { "issueId": "asm-30", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-30", "characterId": "cat-burglar",   "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-30", "characterId": "betty-brant",   "role": "supporting" },
+    { "issueId": "asm-30", "characterId": "j-j-jameson",   "role": "supporting" },
+
+    { "issueId": "asm-31", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-31", "characterId": "master-planner","role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-31", "characterId": "gwen-stacy",    "role": "supporting","isFirstAppearance": true },
+    { "issueId": "asm-31", "characterId": "harry-osborn",  "role": "supporting","isFirstAppearance": true },
+    { "issueId": "asm-31", "characterId": "aunt-may",      "role": "supporting" },
+
+    { "issueId": "asm-32", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-32", "characterId": "master-planner","role": "villain" },
+    { "issueId": "asm-32", "characterId": "aunt-may",      "role": "supporting" },
+    { "issueId": "asm-32", "characterId": "gwen-stacy",    "role": "supporting" },
+    { "issueId": "asm-32", "characterId": "harry-osborn",  "role": "supporting" },
+
+    { "issueId": "asm-33", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-33", "characterId": "master-planner","role": "villain" },
+    { "issueId": "asm-33", "characterId": "aunt-may",      "role": "supporting" },
+
+    { "issueId": "asm-34", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-34", "characterId": "kraven",        "role": "villain" },
+    { "issueId": "asm-34", "characterId": "gwen-stacy",    "role": "supporting" },
+    { "issueId": "asm-34", "characterId": "harry-osborn",  "role": "supporting" },
+
+    { "issueId": "asm-35", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-35", "characterId": "molten-man",    "role": "villain" },
+    { "issueId": "asm-35", "characterId": "liz-allen",     "role": "supporting" },
+
+    { "issueId": "asm-36", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-36", "characterId": "looter",        "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-36", "characterId": "betty-brant",   "role": "supporting" },
+
+    { "issueId": "asm-37", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-37", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-37", "characterId": "norman-osborn", "role": "supporting" },
+
+    { "issueId": "asm-38", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-38", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-38", "characterId": "betty-brant",   "role": "supporting" },
+    { "issueId": "asm-38", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-39", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-39", "characterId": "norman-osborn", "role": "villain" },
+    { "issueId": "asm-39", "characterId": "harry-osborn",  "role": "supporting" },
+    { "issueId": "asm-39", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-40", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-40", "characterId": "norman-osborn", "role": "villain" },
+    { "issueId": "asm-40", "characterId": "harry-osborn",  "role": "supporting" },
+
+    { "issueId": "asm-41", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-41", "characterId": "rhino",         "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-41", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-41", "characterId": "gwen-stacy",    "role": "supporting" },
+    { "issueId": "asm-41", "characterId": "harry-osborn",  "role": "supporting" },
+
+    { "issueId": "asm-42", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-42", "characterId": "rhino",         "role": "villain" },
+    { "issueId": "asm-42", "characterId": "mary-jane-watson","role": "supporting","isFirstAppearance": true },
+    { "issueId": "asm-42", "characterId": "gwen-stacy",    "role": "supporting" },
+    { "issueId": "asm-42", "characterId": "harry-osborn",  "role": "supporting" },
+    { "issueId": "asm-42", "characterId": "aunt-may",      "role": "supporting" },
+
+    { "issueId": "asm-43", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-43", "characterId": "rhino",         "role": "villain" },
+    { "issueId": "asm-43", "characterId": "mary-jane-watson","role": "supporting" },
+    { "issueId": "asm-43", "characterId": "j-j-jameson",   "role": "supporting" },
+
+    { "issueId": "asm-44", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-44", "characterId": "lizard",        "role": "villain" },
+    { "issueId": "asm-44", "characterId": "gwen-stacy",    "role": "supporting" },
+    { "issueId": "asm-44", "characterId": "harry-osborn",  "role": "supporting" },
+
+    { "issueId": "asm-45", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-45", "characterId": "lizard",        "role": "villain" },
+    { "issueId": "asm-45", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-46", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-46", "characterId": "shocker",       "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-46", "characterId": "gwen-stacy",    "role": "supporting" },
+    { "issueId": "asm-46", "characterId": "harry-osborn",  "role": "supporting" },
+
+    { "issueId": "asm-47", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-47", "characterId": "kraven",        "role": "villain" },
+    { "issueId": "asm-47", "characterId": "vulture",       "role": "villain" },
+    { "issueId": "asm-47", "characterId": "gwen-stacy",    "role": "supporting" },
+    { "issueId": "asm-47", "characterId": "harry-osborn",  "role": "supporting" },
+
+    { "issueId": "asm-48", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-48", "characterId": "vulture",       "role": "villain" },
+    { "issueId": "asm-48", "characterId": "blackie-drago", "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-48", "characterId": "j-j-jameson",   "role": "supporting" },
+
+    { "issueId": "asm-49", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-49", "characterId": "vulture",       "role": "villain" },
+    { "issueId": "asm-49", "characterId": "kraven",        "role": "villain" },
+    { "issueId": "asm-49", "characterId": "j-j-jameson",   "role": "supporting" },
+
+    { "issueId": "asm-50", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-50", "characterId": "kingpin",       "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-50", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-50", "characterId": "aunt-may",      "role": "supporting" },
+
+    { "issueId": "asm-51", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-51", "characterId": "kingpin",       "role": "villain" },
+    { "issueId": "asm-51", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-51", "characterId": "betty-brant",   "role": "supporting" },
+
+    { "issueId": "asm-52", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-52", "characterId": "kingpin",       "role": "villain" },
+    { "issueId": "asm-52", "characterId": "joe-robertson", "role": "supporting","isFirstAppearance": true },
+    { "issueId": "asm-52", "characterId": "j-j-jameson",   "role": "supporting" },
+
+    { "issueId": "asm-53", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-53", "characterId": "doc-ock",       "role": "villain" },
+    { "issueId": "asm-53", "characterId": "captain-stacy", "role": "supporting","isFirstAppearance": true },
+    { "issueId": "asm-53", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-54", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-54", "characterId": "doc-ock",       "role": "villain" },
+    { "issueId": "asm-54", "characterId": "captain-stacy", "role": "supporting" },
+    { "issueId": "asm-54", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-55", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-55", "characterId": "doc-ock",       "role": "villain" },
+    { "issueId": "asm-55", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-55", "characterId": "captain-stacy", "role": "supporting" },
+
+    { "issueId": "asm-56", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-56", "characterId": "doc-ock",       "role": "villain" },
+    { "issueId": "asm-56", "characterId": "j-j-jameson",   "role": "supporting" },
+
+    { "issueId": "asm-57", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-57", "characterId": "ka-zar",        "role": "guest",     "isFirstAppearance": true },
+    { "issueId": "asm-57", "characterId": "kraven",        "role": "villain" },
+
+    { "issueId": "asm-58", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-58", "characterId": "ka-zar",        "role": "guest" },
+    { "issueId": "asm-58", "characterId": "kraven",        "role": "villain" },
+
+    { "issueId": "asm-59", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-59", "characterId": "kingpin",       "role": "villain" },
+    { "issueId": "asm-59", "characterId": "mary-jane-watson","role": "supporting" },
+    { "issueId": "asm-59", "characterId": "j-j-jameson",   "role": "supporting" },
+
+    { "issueId": "asm-60", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-60", "characterId": "kingpin",       "role": "villain" },
+    { "issueId": "asm-60", "characterId": "j-j-jameson",   "role": "supporting" },
+
+    { "issueId": "asm-61", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-61", "characterId": "kingpin",       "role": "villain" },
+    { "issueId": "asm-61", "characterId": "gwen-stacy",    "role": "supporting" },
+    { "issueId": "asm-61", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-62", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-62", "characterId": "medusa",        "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-62", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-63", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-63", "characterId": "vulture",       "role": "villain" },
+    { "issueId": "asm-63", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-64", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-64", "characterId": "vulture",       "role": "villain" },
+    { "issueId": "asm-64", "characterId": "j-j-jameson",   "role": "supporting" },
+
+    { "issueId": "asm-65", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-65", "characterId": "vulture",       "role": "villain" },
+    { "issueId": "asm-65", "characterId": "j-j-jameson",   "role": "supporting" },
+
+    { "issueId": "asm-66", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-66", "characterId": "mysterio",      "role": "villain" },
+    { "issueId": "asm-66", "characterId": "gwen-stacy",    "role": "supporting" },
+    { "issueId": "asm-66", "characterId": "harry-osborn",  "role": "supporting" },
+
+    { "issueId": "asm-67", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-67", "characterId": "mysterio",      "role": "villain" },
+    { "issueId": "asm-67", "characterId": "j-j-jameson",   "role": "supporting" },
+
+    { "issueId": "asm-68", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-68", "characterId": "kingpin",       "role": "villain" },
+    { "issueId": "asm-68", "characterId": "gwen-stacy",    "role": "supporting" },
+    { "issueId": "asm-68", "characterId": "harry-osborn",  "role": "supporting" },
+
+    { "issueId": "asm-69", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-69", "characterId": "kingpin",       "role": "villain" },
+    { "issueId": "asm-69", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-69", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-70", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-70", "characterId": "kingpin",       "role": "villain" },
+    { "issueId": "asm-70", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-71", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-71", "characterId": "kingpin",       "role": "villain" },
+    { "issueId": "asm-71", "characterId": "quicksilver",   "role": "guest",     "isFirstAppearance": true },
+
+    { "issueId": "asm-72", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-72", "characterId": "shocker",       "role": "villain" },
+    { "issueId": "asm-72", "characterId": "kingpin",       "role": "villain" },
+
+    { "issueId": "asm-73", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-73", "characterId": "silvermane",    "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-73", "characterId": "kingpin",       "role": "villain" },
+    { "issueId": "asm-73", "characterId": "lizard",        "role": "villain" },
+    { "issueId": "asm-73", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-74", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-74", "characterId": "silvermane",    "role": "villain" },
+    { "issueId": "asm-74", "characterId": "lizard",        "role": "villain" },
+    { "issueId": "asm-74", "characterId": "kingpin",       "role": "villain" },
+
+    { "issueId": "asm-75", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-75", "characterId": "silvermane",    "role": "villain" },
+    { "issueId": "asm-75", "characterId": "lizard",        "role": "villain" },
+    { "issueId": "asm-75", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-76", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-76", "characterId": "lizard",        "role": "villain" },
+    { "issueId": "asm-76", "characterId": "human-torch",   "role": "guest" },
+    { "issueId": "asm-76", "characterId": "mister-fantastic","role": "guest" },
+
+    { "issueId": "asm-77", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-77", "characterId": "lizard",        "role": "villain" },
+    { "issueId": "asm-77", "characterId": "human-torch",   "role": "guest" },
+
+    { "issueId": "asm-78", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-78", "characterId": "prowler",       "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-78", "characterId": "gwen-stacy",    "role": "supporting" },
+    { "issueId": "asm-78", "characterId": "harry-osborn",  "role": "supporting" },
+
+    { "issueId": "asm-79", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-79", "characterId": "prowler",       "role": "villain" },
+    { "issueId": "asm-79", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-80", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-80", "characterId": "chameleon",     "role": "villain" },
+    { "issueId": "asm-80", "characterId": "j-j-jameson",   "role": "supporting" },
+
+    { "issueId": "asm-81", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-81", "characterId": "kangaroo",      "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-81", "characterId": "j-j-jameson",   "role": "supporting" },
+
+    { "issueId": "asm-82", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-82", "characterId": "electro",       "role": "villain" },
+    { "issueId": "asm-82", "characterId": "gwen-stacy",    "role": "supporting" },
+    { "issueId": "asm-82", "characterId": "harry-osborn",  "role": "supporting" },
+
+    { "issueId": "asm-83", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-83", "characterId": "kingpin",       "role": "villain" },
+    { "issueId": "asm-83", "characterId": "schemer",       "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-83", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-84", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-84", "characterId": "kingpin",       "role": "villain" },
+    { "issueId": "asm-84", "characterId": "schemer",       "role": "villain" },
+
+    { "issueId": "asm-85", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-85", "characterId": "kingpin",       "role": "villain" },
+    { "issueId": "asm-85", "characterId": "schemer",       "role": "villain" },
+    { "issueId": "asm-85", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-86", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-86", "characterId": "black-widow",   "role": "guest",     "isFirstAppearance": true },
+    { "issueId": "asm-86", "characterId": "j-j-jameson",   "role": "supporting" },
+
+    { "issueId": "asm-87", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-87", "characterId": "harry-osborn",  "role": "supporting" },
+    { "issueId": "asm-87", "characterId": "gwen-stacy",    "role": "supporting" },
+    { "issueId": "asm-87", "characterId": "j-j-jameson",   "role": "supporting" },
+
+    { "issueId": "asm-88", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-88", "characterId": "doc-ock",       "role": "villain" },
+    { "issueId": "asm-88", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-89", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-89", "characterId": "doc-ock",       "role": "villain" },
+    { "issueId": "asm-89", "characterId": "captain-stacy", "role": "supporting" },
+    { "issueId": "asm-89", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-90", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-90", "characterId": "doc-ock",       "role": "villain" },
+    { "issueId": "asm-90", "characterId": "captain-stacy", "role": "supporting" },
+    { "issueId": "asm-90", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-91", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-91", "characterId": "spider-slayer", "role": "villain" },
+    { "issueId": "asm-91", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-91", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-92", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-92", "characterId": "iceman",        "role": "guest",     "isFirstAppearance": true },
+    { "issueId": "asm-92", "characterId": "gwen-stacy",    "role": "supporting" },
+    { "issueId": "asm-92", "characterId": "harry-osborn",  "role": "supporting" },
+
+    { "issueId": "asm-93", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-93", "characterId": "prowler",       "role": "supporting" },
+    { "issueId": "asm-93", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-94", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-94", "characterId": "beetle",        "role": "villain" },
+    { "issueId": "asm-94", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-95", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-95", "characterId": "terrorist",     "role": "villain" },
+    { "issueId": "asm-95", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-96", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-96", "characterId": "norman-osborn", "role": "villain" },
+    { "issueId": "asm-96", "characterId": "harry-osborn",  "role": "supporting" },
+    { "issueId": "asm-96", "characterId": "gwen-stacy",    "role": "supporting" },
+    { "issueId": "asm-96", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-97", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-97", "characterId": "norman-osborn", "role": "villain" },
+    { "issueId": "asm-97", "characterId": "harry-osborn",  "role": "supporting" },
+    { "issueId": "asm-97", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-98", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-98", "characterId": "norman-osborn", "role": "villain" },
+    { "issueId": "asm-98", "characterId": "harry-osborn",  "role": "supporting" },
+    { "issueId": "asm-98", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-99", "characterId": "spiderman",     "role": "main" },
+    { "issueId": "asm-99", "characterId": "j-j-jameson",   "role": "supporting" },
+    { "issueId": "asm-99", "characterId": "gwen-stacy",    "role": "supporting" },
+
+    { "issueId": "asm-100", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-100", "characterId": "gwen-stacy",   "role": "supporting" },
+    { "issueId": "asm-100", "characterId": "mary-jane-watson","role": "supporting" },
+    { "issueId": "asm-100", "characterId": "harry-osborn", "role": "supporting" },
+    { "issueId": "asm-100", "characterId": "j-j-jameson",  "role": "supporting" },
+
+    { "issueId": "asm-101", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-101", "characterId": "morbius",      "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-101", "characterId": "gwen-stacy",   "role": "supporting" },
+
+    { "issueId": "asm-102", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-102", "characterId": "morbius",      "role": "villain" },
+    { "issueId": "asm-102", "characterId": "lizard",       "role": "villain" },
+
+    { "issueId": "asm-103", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-103", "characterId": "ka-zar",       "role": "guest" },
+    { "issueId": "asm-103", "characterId": "gwen-stacy",   "role": "supporting" },
+
+    { "issueId": "asm-104", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-104", "characterId": "ka-zar",       "role": "guest" },
+    { "issueId": "asm-104", "characterId": "gwen-stacy",   "role": "supporting" },
+
+    { "issueId": "asm-105", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-105", "characterId": "spider-slayer","role": "villain" },
+    { "issueId": "asm-105", "characterId": "j-j-jameson",  "role": "supporting" },
+
+    { "issueId": "asm-106", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-106", "characterId": "spider-slayer","role": "villain" },
+    { "issueId": "asm-106", "characterId": "j-j-jameson",  "role": "supporting" },
+
+    { "issueId": "asm-107", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-107", "characterId": "spider-slayer","role": "villain" },
+    { "issueId": "asm-107", "characterId": "j-j-jameson",  "role": "supporting" },
+
+    { "issueId": "asm-108", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-108", "characterId": "sha-shan",     "role": "supporting","isFirstAppearance": true },
+    { "issueId": "asm-108", "characterId": "flash-thompson","role": "supporting" },
+
+    { "issueId": "asm-109", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-109", "characterId": "doctor-strange","role": "guest",    "isFirstAppearance": true },
+    { "issueId": "asm-109", "characterId": "flash-thompson","role": "supporting" },
+
+    { "issueId": "asm-110", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-110", "characterId": "gibbon",       "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-110", "characterId": "kraven",       "role": "villain" },
+
+    { "issueId": "asm-111", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-111", "characterId": "gibbon",       "role": "villain" },
+    { "issueId": "asm-111", "characterId": "kraven",       "role": "villain" },
+
+    { "issueId": "asm-112", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-112", "characterId": "doc-ock",      "role": "villain" },
+    { "issueId": "asm-112", "characterId": "hammerhead",   "role": "villain",   "isFirstAppearance": true },
+
+    { "issueId": "asm-113", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-113", "characterId": "doc-ock",      "role": "villain" },
+    { "issueId": "asm-113", "characterId": "hammerhead",   "role": "villain" },
+    { "issueId": "asm-113", "characterId": "aunt-may",     "role": "supporting" },
+
+    { "issueId": "asm-114", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-114", "characterId": "hammerhead",   "role": "villain" },
+    { "issueId": "asm-114", "characterId": "doc-ock",      "role": "villain" },
+    { "issueId": "asm-114", "characterId": "aunt-may",     "role": "supporting" },
+
+    { "issueId": "asm-115", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-115", "characterId": "hammerhead",   "role": "villain" },
+    { "issueId": "asm-115", "characterId": "doc-ock",      "role": "villain" },
+    { "issueId": "asm-115", "characterId": "aunt-may",     "role": "supporting" },
+
+    { "issueId": "asm-116", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-116", "characterId": "smasher",      "role": "villain",   "isFirstAppearance": true },
+
+    { "issueId": "asm-117", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-117", "characterId": "disruptor",    "role": "villain",   "isFirstAppearance": true },
+
+    { "issueId": "asm-118", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-118", "characterId": "disruptor",    "role": "villain" },
+    { "issueId": "asm-118", "characterId": "gwen-stacy",   "role": "supporting" },
+
+    { "issueId": "asm-119", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-119", "characterId": "hulk",         "role": "guest",     "isFirstAppearance": true },
+    { "issueId": "asm-119", "characterId": "gwen-stacy",   "role": "supporting" },
+
+    { "issueId": "asm-120", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-120", "characterId": "hulk",         "role": "guest" },
+    { "issueId": "asm-120", "characterId": "gwen-stacy",   "role": "supporting" },
+
+    { "issueId": "asm-121", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-121", "characterId": "norman-osborn","role": "villain" },
+    { "issueId": "asm-121", "characterId": "gwen-stacy",   "role": "supporting" },
+    { "issueId": "asm-121", "characterId": "harry-osborn", "role": "supporting" },
+    { "issueId": "asm-121", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-122", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-122", "characterId": "norman-osborn","role": "villain" },
+    { "issueId": "asm-122", "characterId": "harry-osborn", "role": "supporting" },
+    { "issueId": "asm-122", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-123", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-123", "characterId": "luke-cage",    "role": "guest",     "isFirstAppearance": true },
+    { "issueId": "asm-123", "characterId": "harry-osborn", "role": "supporting" },
+    { "issueId": "asm-123", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-124", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-124", "characterId": "man-wolf",     "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-124", "characterId": "john-jameson", "role": "supporting" },
+    { "issueId": "asm-124", "characterId": "j-j-jameson",  "role": "supporting" },
+    { "issueId": "asm-124", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-125", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-125", "characterId": "man-wolf",     "role": "villain" },
+    { "issueId": "asm-125", "characterId": "j-j-jameson",  "role": "supporting" },
+    { "issueId": "asm-125", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-126", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-126", "characterId": "kangaroo",     "role": "villain" },
+    { "issueId": "asm-126", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-127", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-127", "characterId": "vulture",      "role": "villain" },
+    { "issueId": "asm-127", "characterId": "human-torch",  "role": "guest" },
+
+    { "issueId": "asm-128", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-128", "characterId": "vulture",      "role": "villain" },
+    { "issueId": "asm-128", "characterId": "human-torch",  "role": "guest" },
+
+    { "issueId": "asm-129", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-129", "characterId": "punisher",     "role": "guest",     "isFirstAppearance": true },
+    { "issueId": "asm-129", "characterId": "jackal",       "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-129", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-130", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-130", "characterId": "punisher",     "role": "guest" },
+    { "issueId": "asm-130", "characterId": "tarantula",    "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-130", "characterId": "jackal",       "role": "villain" },
+
+    { "issueId": "asm-131", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-131", "characterId": "doc-ock",      "role": "villain" },
+    { "issueId": "asm-131", "characterId": "aunt-may",     "role": "supporting" },
+    { "issueId": "asm-131", "characterId": "hammerhead",   "role": "villain" },
+
+    { "issueId": "asm-132", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-132", "characterId": "molten-man",   "role": "villain" },
+    { "issueId": "asm-132", "characterId": "liz-allen",    "role": "supporting" },
+
+    { "issueId": "asm-133", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-133", "characterId": "molten-man",   "role": "villain" },
+    { "issueId": "asm-133", "characterId": "liz-allen",    "role": "supporting" },
+
+    { "issueId": "asm-134", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-134", "characterId": "tarantula",    "role": "villain" },
+    { "issueId": "asm-134", "characterId": "punisher",     "role": "guest" },
+
+    { "issueId": "asm-135", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-135", "characterId": "tarantula",    "role": "villain" },
+    { "issueId": "asm-135", "characterId": "punisher",     "role": "guest" },
+    { "issueId": "asm-135", "characterId": "jackal",       "role": "villain" },
+
+    { "issueId": "asm-136", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-136", "characterId": "harry-osborn", "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-136", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-137", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-137", "characterId": "harry-osborn", "role": "villain" },
+    { "issueId": "asm-137", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-138", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-138", "characterId": "mindworm",     "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-138", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-139", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-139", "characterId": "grizzly",      "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-139", "characterId": "jackal",       "role": "villain" },
+    { "issueId": "asm-139", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-140", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-140", "characterId": "grizzly",      "role": "villain" },
+    { "issueId": "asm-140", "characterId": "jackal",       "role": "villain" },
+    { "issueId": "asm-140", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-141", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-141", "characterId": "mysterio",     "role": "villain" },
+    { "issueId": "asm-141", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-142", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-142", "characterId": "mysterio",     "role": "villain" },
+    { "issueId": "asm-142", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-143", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-143", "characterId": "cyclone",      "role": "villain",   "isFirstAppearance": true },
+    { "issueId": "asm-143", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-144", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-144", "characterId": "cyclone",      "role": "villain" },
+    { "issueId": "asm-144", "characterId": "gwen-stacy",   "role": "supporting" },
+    { "issueId": "asm-144", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-145", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-145", "characterId": "gwen-stacy",   "role": "supporting" },
+    { "issueId": "asm-145", "characterId": "jackal",       "role": "villain" },
+    { "issueId": "asm-145", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-146", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-146", "characterId": "scorpion",     "role": "villain" },
+    { "issueId": "asm-146", "characterId": "jackal",       "role": "villain" },
+    { "issueId": "asm-146", "characterId": "gwen-stacy",   "role": "supporting" },
+
+    { "issueId": "asm-147", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-147", "characterId": "tarantula",    "role": "villain" },
+    { "issueId": "asm-147", "characterId": "jackal",       "role": "villain" },
+    { "issueId": "asm-147", "characterId": "gwen-stacy",   "role": "supporting" },
+
+    { "issueId": "asm-148", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-148", "characterId": "jackal",       "role": "villain" },
+    { "issueId": "asm-148", "characterId": "tarantula",    "role": "villain" },
+    { "issueId": "asm-148", "characterId": "gwen-stacy",   "role": "supporting" },
+
+    { "issueId": "asm-149", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-149", "characterId": "jackal",       "role": "villain" },
+    { "issueId": "asm-149", "characterId": "spider-clone", "role": "supporting","isFirstAppearance": true },
+    { "issueId": "asm-149", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-150", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-150", "characterId": "spider-clone", "role": "supporting" },
+    { "issueId": "asm-150", "characterId": "aunt-may",     "role": "supporting" },
+    { "issueId": "asm-150", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-151", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-151", "characterId": "shocker",      "role": "villain" },
+    { "issueId": "asm-151", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-152", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-152", "characterId": "shocker",      "role": "villain" },
+    { "issueId": "asm-152", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-153", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-153", "characterId": "flash-thompson","role": "supporting" },
+    { "issueId": "asm-153", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-154", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-154", "characterId": "sandman",      "role": "villain" },
+    { "issueId": "asm-154", "characterId": "mary-jane-watson","role": "supporting" },
+
+    { "issueId": "asm-155", "characterId": "spiderman",    "role": "main" },
+    { "issueId": "asm-155", "characterId": "sandman",      "role": "villain" },
+    { "issueId": "asm-155", "characterId": "mary-jane-watson","role": "supporting" },
 
     { "issueId": "asm-194",          "characterId": "spiderman",       "role": "main" },
     { "issueId": "asm-194",          "characterId": "black-cat",       "role": "supporting" },

@@ -121,6 +121,306 @@
     },
 
     {
+    "id": "doctor-doom",
+    "name": "Doctor Doom",
+    "description": "Victor Von Doom, ruler of Latveria and one of Marvel's greatest villains",
+    "publisherId": "marvel"
+    },
+    {
+        "id": "lizard",
+        "name": "Lizard",
+        "description": "Dr. Curt Connors, a scientist who transforms into a reptilian monster",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "living-brain",
+        "name": "Living Brain",
+        "description": "A powerful robot built by International Computing Machines Corporation",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "electro",
+        "name": "Electro",
+        "description": "Maxwell Dillon, a villain with the ability to generate and control electricity",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "big-man",
+        "name": "Big Man",
+        "description": "Frederick Foswell, a Daily Bugle reporter who secretly led the Enforcers as the Big Man",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "enforcers",
+        "name": "Enforcers",
+        "description": "A gang of criminals consisting of Ox, Montana, and Fancy Dan",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "mysterio",
+        "name": "Mysterio",
+        "description": "Quentin Beck, a special effects artist turned master of illusion and supervillain",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "kraven",
+        "name": "Kraven the Hunter",
+        "description": "Sergei Kravinoff, the world's greatest hunter obsessed with defeating Spider-Man",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "daredevil",
+        "name": "Daredevil",
+        "description": "Matt Murdock, a blind lawyer who fights crime as the Man Without Fear",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "ringmaster",
+        "name": "Ringmaster",
+        "description": "Maynard Tiboldt, leader of the Circus of Crime",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "scorpion",
+        "name": "Scorpion",
+        "description": "Mac Gargan, a private investigator transformed into the Scorpion by J. Jonah Jameson",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "beetle",
+        "name": "Beetle",
+        "description": "Abner Jenkins, a mechanic who became a supervillain using a stolen suit of armor",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "crime-master",
+        "name": "Crime Master",
+        "description": "Nick Lewis, a crime lord who clashed with Spider-Man and the Green Goblin",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "molten-man",
+        "name": "Molten Man",
+        "description": "Mark Raxton, Liz Allen's step-brother who was accidentally coated in a liquid metal alloy",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "spider-slayer",
+        "name": "Spider-Slayer",
+        "description": "A series of robots built by Spencer Smythe and commissioned by J. Jonah Jameson to destroy Spider-Man",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "cat-burglar",
+        "name": "Cat Burglar",
+        "description": "A thief who appeared in early Spider-Man stories",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "master-planner",
+        "name": "Master Planner",
+        "description": "Doctor Octopus operating under a secret alias to steal technology",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "looter",
+        "name": "Looter",
+        "description": "Norton G. Fester, a villain who gained super strength from a meteor",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "rhino",
+        "name": "Rhino",
+        "description": "Aleksei Sytsevich, a criminal bonded to a rhinoceros-like suit giving him immense strength",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "shocker",
+        "name": "Shocker",
+        "description": "Herman Schultz, a villain who uses vibro-shock gauntlets to commit crimes",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "blackie-drago",
+        "name": "Blackie Drago",
+        "description": "A criminal who stole the Vulture's harness while they were both imprisoned",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "kingpin",
+        "name": "Kingpin",
+        "description": "Wilson Fisk, the powerful crime lord of New York City",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "joe-robertson",
+        "name": "Joe Robertson",
+        "description": "Joseph 'Robbie' Robertson, the editor of the Daily Bugle and a close friend of Peter Parker",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "captain-stacy",
+        "name": "Captain Stacy",
+        "description": "George Stacy, a retired NYPD captain and father of Gwen Stacy",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "ka-zar",
+        "name": "Ka-Zar",
+        "description": "Kevin Plunder, a lord of the jungle who rules over the Savage Land",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "quicksilver",
+        "name": "Quicksilver",
+        "description": "Pietro Maximoff, a mutant with the ability to move at superhuman speeds",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "silvermane",
+        "name": "Silvermane",
+        "description": "Silvio Manfredi, an aging Maggia crime boss obsessed with regaining his youth",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "prowler",
+        "name": "Prowler",
+        "description": "Hobie Brown, a young inventor who created a suit to commit crimes before becoming a hero",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "kangaroo",
+        "name": "Kangaroo",
+        "description": "Frank Oliver, a villain with kangaroo-like agility and strength",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "schemer",
+        "name": "Schemer",
+        "description": "Richard Fisk, the son of the Kingpin who disguised himself to take down his father",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "black-widow",
+        "name": "Black Widow",
+        "description": "Natasha Romanoff, a former Soviet spy turned S.H.I.E.L.D. agent and Avenger",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "iceman",
+        "name": "Iceman",
+        "description": "Bobby Drake, a mutant with the ability to generate and control ice",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "sha-shan",
+        "name": "Sha Shan",
+        "description": "A Vietnamese woman connected to Flash Thompson's past in the Vietnam War",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "doctor-strange",
+        "name": "Doctor Strange",
+        "description": "Stephen Strange, the Sorcerer Supreme and master of the mystic arts",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "gibbon",
+        "name": "Gibbon",
+        "description": "Martin Blank, a man with ape-like abilities who was manipulated by Kraven the Hunter",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "hammerhead",
+        "name": "Hammerhead",
+        "description": "A Maggia crime boss with a steel-reinforced skull who uses his head as a weapon",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "smasher",
+        "name": "Smasher",
+        "description": "A villain who appeared in the political storyline issues of Amazing Spider-Man",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "disruptor",
+        "name": "Disruptor",
+        "description": "A politically motivated villain who clashed with Spider-Man in the early 1970s",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "hulk",
+        "name": "Hulk",
+        "description": "Bruce Banner, a scientist who transforms into a green-skinned giant of immense strength",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "luke-cage",
+        "name": "Luke Cage",
+        "description": "A street-level hero with unbreakable skin and superhuman strength, also known as Power Man",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "man-wolf",
+        "name": "Man-Wolf",
+        "description": "John Jameson transformed into a werewolf-like creature by a mystical moonstone",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "punisher",
+        "name": "Punisher",
+        "description": "Frank Castle, a vigilante who wages a one-man war on crime after the murder of his family",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "jackal",
+        "name": "Jackal",
+        "description": "Miles Warren, a geneticist and former professor of Peter Parker who became obsessed with cloning",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "tarantula",
+        "name": "Tarantula",
+        "description": "A South American mercenary with poisoned toe spikes on his boots",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "mindworm",
+        "name": "Mindworm",
+        "description": "William Turner, a mutant with powerful telepathic abilities",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "grizzly",
+        "name": "Grizzly",
+        "description": "Maxwell Markham, a criminal who wears a bear-like exoskeleton suit",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "cyclone",
+        "name": "Cyclone",
+        "description": "André Gerard, a French criminal who uses a suit that generates powerful wind vortexes",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "spider-clone",
+        "name": "Spider-Clone",
+        "description": "Ben Reilly, the clone of Peter Parker created by the Jackal",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "medusa",
+        "name": "Medusa",
+        "description": "Medusalith Amaquelin, queen of the Inhumans with prehensile hair",
+        "publisherId": "marvel"
+    },
+    {
+        "id": "morbius",
+        "name": "Morbius",
+        "description": "Dr. Michael Morbius, a biochemist turned living vampire after a failed experiment",
+        "publisherId": "marvel"
+    },
+    {
         "id": "mister-fantastic",
         "name": "Mister Fantastic",
         "description": "Reed Richards, The leader of the Fantastic Four",
