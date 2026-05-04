@@ -514,12 +514,21 @@
       <input class="search-input" id="browse-search" type="text" placeholder="Filter characters…" oninput="filterChars(this.value)">
     </div>
   </div>
+
   <div class="section">
     <div class="section-header">
       <span class="section-title">Teams</span>
     </div>
     <div class="chars-grid" id="browse-teams"><div class="loading">Loading…</div></div>
   </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-title">Story Arcs</span>
+    </div>
+    <div class="chars-grid" id="browse-arcs"><div class="loading">Loading…</div></div>
+  </div>
+
   <div class="section">
     <div class="section-header">
       <span class="section-title">All characters</span>
@@ -539,6 +548,12 @@
   <div class="section">
     <button class="back-link" onclick="goBack()">← Back</button>
     <div id="team-detail-content"><div class="loading">Loading…</div></div>
+  </div>
+</div>
+<div class="view" id="view-arc">
+  <div class="section">
+    <button class="back-link" onclick="goBack()">← Back</button>
+    <div id="arc-detail-content"><div class="loading">Loading…</div></div>
   </div>
 </div>
 
@@ -715,6 +730,19 @@ function renderTeamCard(team) {
   </div>`;
 }
 
+function renderArcCard(arc) {
+  const pub = arc.publisher || {};
+  const c = pubColor(pub.id || arc.publisherId);
+  return `<div class="char-card" onclick="openArc('${arc.id}')">
+    <div class="char-avatar" style="background:${c.bg};color:${c.text};font-size:10px">
+      ARC
+    </div>
+    <div class="char-name">${arc.title}</div>
+    <div class="char-publisher">${pub.name || ''}</div>
+    <span class="char-pill" style="background:${c.bg};color:${c.text}">STORY ARC</span>
+  </div>`;
+}
+
 function renderIssueBadges(issue) {
   let b = '';
   const firstAppearances = (issue.characterLinks || []).filter(l => l.isFirstAppearance);
@@ -765,7 +793,10 @@ async function loadHome() {
     document.getElementById('browse-teams').innerHTML = teams.length
       ? teams.map(renderTeamCard).join('')
       : '<p class="empty">No teams yet.</p>';
-
+    const arcs = await api('/api/story-arcs');
+      document.getElementById('browse-arcs').innerHTML = arcs.length
+        ? arcs.map(renderArcCard).join('')
+        : '<p class="empty">No story arcs yet.</p>';
     const keyIssues = issues.filter(i => i.isKeyIssue).slice(0, 5);
     document.getElementById('home-issues').innerHTML = keyIssues.length
       ? keyIssues.map(renderIssueRow).join('')
@@ -964,6 +995,62 @@ async function openTeam(id) {
 
       <div class="tab-panel active" id="tp-team-members">${membersHTML}</div>
       <div class="tab-panel" id="tp-team-issues">${issuesHTML}</div>
+    `;
+
+  } catch (e) {
+    container.innerHTML = errBanner(e.message);
+  }
+}
+
+async function openArc(id) {
+  showView('arc');
+  const container = document.getElementById('arc-detail-content');
+  container.innerHTML = '<div class="loading">Loading…</div>';
+
+  try {
+    const arc = await api(`/api/story-arcs/${id}`);
+    const pub = arc.publisher || {};
+    const c = pubColor(pub.id || arc.publisherId);
+    const issues = arc.issues || [];
+
+    const issuesHTML = issues.length
+      ? `<div class="ro-list">${issues.map((link, i) => {
+          const iss = link.issue || {};
+          const series = iss.series || {};
+          const date = iss.releaseDate ? new Date(iss.releaseDate).getFullYear() : '';
+          const firstApps = (iss.characterLinks || []).filter(l => l.isFirstAppearance);
+          const firstAppNames = firstApps.map(l => l.character.name).join(', ');
+          return `<div class="ro-item">
+            <div class="ro-n">${String(i+1).padStart(2,'0')}</div>
+            <div class="ro-info">
+              <div class="ro-title">${iss.title || 'Untitled'}</div>
+              <div class="ro-sub">${series.title || ''} #${iss.issueNumber || '?'} · ${date}</div>
+              ${iss.isKeyIssue ? `<span class="badge badge-key">Key issue</span>` : ''}
+              ${iss.isMajorCrossover ? `<span class="badge badge-cross">Crossover</span>` : ''}
+            </div>
+            ${firstAppNames ? `
+              <div style="position:relative;flex-shrink:0" class="fa-dot-wrap">
+                <div onclick="this.nextElementSibling.classList.toggle('show')"
+                  style="width:8px;height:8px;border-radius:50%;background:var(--success);cursor:pointer;margin-top:4px;">
+                </div>
+                <div class="fa-tooltip" style="display:none;position:absolute;right:0;top:16px;background:var(--ink);color:white;font-size:11px;padding:6px 10px;border-radius:var(--r-md);white-space:nowrap;z-index:10;font-weight:500;">
+                  1st: ${firstAppNames}
+                </div>
+              </div>` : ''}
+          </div>`;
+        }).join('')}</div>`
+      : '<p class="empty">No issues linked yet.</p>';
+
+    container.innerHTML = `
+      <div class="char-detail-header">
+        <div class="char-detail-avatar" style="background:${c.bg};color:${c.text};font-size:11px">ARC</div>
+        <div>
+          <div class="char-detail-name">${arc.title}</div>
+          <div class="char-detail-sub">${pub.name || ''} · ${arc.description || ''}</div>
+        </div>
+      </div>
+      <div style="margin-bottom:1rem;font-size:13px;color:var(--ink-muted)">${issues.length} issue${issues.length !== 1 ? 's' : ''}</div>
+      ${issuesHTML}
     `;
 
   } catch (e) {
