@@ -48,6 +48,34 @@ async function readJsonFromDirs(filename) {
   return results;
 }
 
+async function expandCreatorRuns(runs) {
+  const links = [];
+
+  for (const run of runs) {
+    const allIssues = await prisma.issue.findMany({
+      where: { seriesId: run.seriesId },
+      select: { id: true, issueNumber: true },
+    });
+
+    const filtered = allIssues.filter(issue => {
+      const num = parseInt(issue.issueNumber);
+      const from = parseInt(run.fromIssue);
+      const to = parseInt(run.toIssue);
+      return !isNaN(num) && num >= from && num <= to;
+    });
+
+    for (const issue of filtered) {
+      links.push({
+        issueId: issue.id,
+        creatorId: run.creatorId,
+        role: run.role,
+      });
+    }
+  }
+
+  return links;
+}
+
 async function main() {
   const now = new Date();
 
@@ -55,6 +83,8 @@ async function main() {
   const characters      = await readJson("characters.json");
   const series          = await readJson("series.json");
   const issues           = await readJsonFromDirs("issues.json");
+  const creators        = await readJsonFromDirs("creators.json");
+  const creatorRuns = await readJsonFromDirs("creatorRuns.json");
   const jumpingOffPoints = await readJsonFromDirs("jumpingOffPoints.json");
   const issueCharacters  = await readJsonFromDirs("issueCharacters.json");
   const teams            = await readJsonFromDirs("teams.json");
@@ -208,6 +238,46 @@ async function main() {
       create: { storyArcId: link.storyArcId, issueId: link.issueId, order: link.order ?? 0 },
     });
   }
+
+  // ── CREATORS ──
+  for (const creator of creators) {
+    await prisma.creator.upsert({
+      where: { id: creator.id },
+      update: {
+        name: creator.name,
+        nationality: creator.nationality ?? null,
+        birthYear: creator.birthYear ?? null,
+        updatedAt: now,
+      },
+      create: {
+        id: creator.id,
+        name: creator.name,
+        nationality: creator.nationality ?? null,
+        birthYear: creator.birthYear ?? null,
+        updatedAt: now,
+      },
+    });
+  }
+
+  // ── CREATOR RUNS ──
+const expandedRuns = await expandCreatorRuns(creatorRuns);
+for (const link of expandedRuns) {
+  await prisma.issueCreator.upsert({
+    where: {
+      issueId_creatorId_role: {
+        issueId: link.issueId,
+        creatorId: link.creatorId,
+        role: link.role,
+      },
+    },
+    update: {},
+    create: {
+      issueId: link.issueId,
+      creatorId: link.creatorId,
+      role: link.role,
+    },
+  });
+}
 
   console.log("Import complete.");
 }

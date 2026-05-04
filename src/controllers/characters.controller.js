@@ -78,6 +78,9 @@ export async function getCharacterIssues(req, res) {
               where: { isFirstAppearance: true },
               include: { character: true },
             },
+            creatorLinks: {
+              include: { creator: true },
+            },
           },
         },
       },

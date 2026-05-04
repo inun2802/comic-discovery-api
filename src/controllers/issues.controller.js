@@ -67,3 +67,40 @@ export async function getAllIssues(req, res) {
     res.status(500).json({ error: error.message });
   }
 }
+
+export async function getIssueById(req, res) {
+  try {
+    const issue = await prisma.issue.findUnique({
+      where: { id: req.params.id },
+      include: {
+        series: true,
+        characterLinks: {
+          include: { character: true },
+        },
+        creatorLinks: {
+          include: { creator: true },
+        },
+      },
+    });
+
+    if (!issue) return res.status(404).json({ error: "Issue not found" });
+    res.json(issue);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+}
+
+export async function getIssueCreators(req, res) {
+  try {
+    const links = await prisma.issueCreator.findMany({
+      where: { issueId: req.params.id },
+      include: { creator: true },
+      orderBy: { role: "asc" },
+    });
+    res.json(links);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: error.message });
+  }
+}

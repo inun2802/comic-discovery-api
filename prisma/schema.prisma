@@ -78,6 +78,7 @@ model Issue {
   issueNumber       String?
   title             String?
   releaseDate       DateTime?
+  creatorLinks  IssueCreator[]
   universe          String?          // "main", "ultimate", "absolute"
   isFirstAppearance Boolean          @default(false)
   isMajorCrossover  Boolean          @default(false)

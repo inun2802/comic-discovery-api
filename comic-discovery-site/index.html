@@ -860,10 +860,18 @@ async function openCharacter(id) {
           const date = iss.releaseDate ? new Date(iss.releaseDate).getFullYear() : '';
           const firstApps = (iss.characterLinks || []).filter(lk => lk.isFirstAppearance);
           const firstAppNames = firstApps.map(lk => lk.character.name).join(', ');
+          const writers  = (iss.creatorLinks || []).filter(l => l.role === 'writer').map(l => l.creator.name).join(', ');
+          const pencilers = (iss.creatorLinks || []).filter(l => l.role === 'penciler').map(l => l.creator.name).join(', ');
           return `<div class="ro-item">
             <div class="ro-info">
               <div class="ro-title">${iss.title || 'Untitled'}</div>
               <div class="ro-sub">${series.title||''} #${iss.issueNumber||'?'} · ${date}</div>
+              ${writers || pencilers ? `
+                <div style="font-size:11px;color:var(--ink-faint);margin-top:4px">
+                  ${writers  ? `W: ${writers}`   : ''}
+                  ${writers && pencilers ? ' · ' : ''}
+                  ${pencilers ? `P: ${pencilers}` : ''}
+                </div>` : ''}
               ${iss.isKeyIssue ? `<span class="badge badge-key">Key issue</span>` : ''}
               ${iss.isMajorCrossover ? `<span class="badge badge-cross">Crossover</span>` : ''}
             </div>
