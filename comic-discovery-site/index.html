@@ -842,7 +842,7 @@ async function openCharacter(id) {
   container.innerHTML = '<div class="loading">Loading…</div>';
 
   try {
-    const [char, jumpingPoints, supportingCast, issues] = await Promise.all([
+    const [char, jumpingPoints, supportingCast, issues, storyArcs] = await Promise.all([
       api(`/api/characters/${id}`),
       api(`/api/characters/${id}/jumping-points`).catch(() => []),
       api(`/api/characters/${id}/supporting-cast`).catch(() => []),
@@ -861,7 +861,6 @@ async function openCharacter(id) {
           const firstApps = (iss.characterLinks || []).filter(lk => lk.isFirstAppearance);
           const firstAppNames = firstApps.map(lk => lk.character.name).join(', ');
           return `<div class="ro-item">
-            <div class="ro-n">${String(i+1).padStart(2,'0')}</div>
             <div class="ro-info">
               <div class="ro-title">${iss.title || 'Untitled'}</div>
               <div class="ro-sub">${series.title||''} #${iss.issueNumber||'?'} · ${date}</div>

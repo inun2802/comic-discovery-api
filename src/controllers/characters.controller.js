@@ -290,7 +290,17 @@ export async function getCharacterStoryArcs(req, res) {
           include: {
             storyArcLinks: {
               include: {
-                storyArc: true,
+                storyArc: {
+                  include: {
+                    issues: {
+                      orderBy: { order: "asc" },
+                      take: 1,
+                      include: {
+                        issue: { select: { releaseDate: true } },
+                      },
+                    },
+                  },
+                },
               },
             },
           },
@@ -308,7 +318,13 @@ export async function getCharacterStoryArcs(req, res) {
       }
     }
 
-    res.json(Array.from(arcMap.values()));
+    const arcs = Array.from(arcMap.values()).sort((a, b) => {
+      const dateA = a.issues?.[0]?.issue?.releaseDate ?? '9999';
+      const dateB = b.issues?.[0]?.issue?.releaseDate ?? '9999';
+      return new Date(dateA) - new Date(dateB);
+    });
+
+    res.json(arcs);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error.message });

@@ -18,6 +18,29 @@ model Publisher {
   storyArcs  StoryArc[]
 }
 
+model Creator {
+  id          String         @id
+  name        String
+  nationality String?
+  birthYear   Int?
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  issueLinks  IssueCreator[]
+
+  @@index([name])
+}
+
+model IssueCreator {
+  issueId    String
+  creatorId  String
+  role       String   // "writer", "penciler", "inker", "colorist", "letterer"
+
+  issue      Issue    @relation(fields: [issueId], references: [id])
+  creator    Creator  @relation(fields: [creatorId], references: [id])
+
+  @@id([issueId, creatorId, role])
+}
+
 model Character {
   id          String            @id @default(cuid())
   name        String
