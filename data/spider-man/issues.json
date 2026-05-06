@@ -70,26 +70,6 @@
         "isKeyIssue": true
     },
     {
-        "id": "asm-7",
-        "seriesId": "asm",
-        "issueNumber": "7",
-        "title": "The Return of the Vulture!",
-        "releaseDate": "1963-09-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-8",
-        "seriesId": "asm",
-        "issueNumber": "8",
-        "title": "The Terrible Threat of the Living Brain / Spider-Man Tackles the Torch",
-        "releaseDate": "1963-10-01",
-        "universe": "main",
-        "isMajorCrossover": true,
-        "isKeyIssue": false
-    },
-    {
         "id": "asm-9",
         "seriesId": "asm",
         "issueNumber": "9",
@@ -108,26 +88,6 @@
         "universe": "main",
         "isMajorCrossover": false,
         "isKeyIssue": true
-    },
-    {
-        "id": "asm-11",
-        "seriesId": "asm",
-        "issueNumber": "11",
-        "title": "Turning Point",
-        "releaseDate": "1964-01-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-12",
-        "seriesId": "asm",
-        "issueNumber": "12",
-        "title": "Unmasked by Doctor Octopus!",
-        "releaseDate": "1964-02-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
     },
     {
         "id": "asm-13",
@@ -210,46 +170,6 @@
         "isKeyIssue": true
     },
     {
-        "id": "asm-21",
-        "seriesId": "asm",
-        "issueNumber": "21",
-        "title": "Where flies the Beetle...!",
-        "releaseDate": "1964-11-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-22",
-        "seriesId": "asm",
-        "issueNumber": "22",
-        "title": "Preeeeeesenting...The Clown, And The Masters Of Menace!",
-        "releaseDate": "1964-12-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-23",
-        "seriesId": "asm",
-        "issueNumber": "23",
-        "title": "The Goblin and The Gangster",
-        "releaseDate": "1965-01-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-24",
-        "seriesId": "asm",
-        "issueNumber": "24",
-        "title": "Spider-Man Goes Mad",
-        "releaseDate": "1965-02-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
         "id": "asm-25",
         "seriesId": "asm",
         "issueNumber": "25",
@@ -260,50 +180,10 @@
         "isKeyIssue": true
     },
     {
-        "id": "asm-26",
-        "seriesId": "asm",
-        "issueNumber": "26",
-        "title": "The Man in the Crime-Master's Mask!",
-        "releaseDate": "1965-04-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-27",
-        "seriesId": "asm",
-        "issueNumber": "27",
-        "title": "Bring Back My Goblin to Me!",
-        "releaseDate": "1965-05-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
         "id": "asm-28",
         "seriesId": "asm",
         "issueNumber": "28",
         "title": "The Menace Of the Molten Man!",
-        "releaseDate": "1965-06-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": true
-    },
-    {
-        "id": "asm-29",
-        "seriesId": "asm",
-        "issueNumber": "29",
-        "title": "Never Step On A Scorpion!",
-        "releaseDate": "1965-06-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-30",
-        "seriesId": "asm",
-        "issueNumber": "30",
-        "title": "The Menace Of The Molten Man!",
         "releaseDate": "1965-06-01",
         "universe": "main",
         "isMajorCrossover": false,
@@ -338,56 +218,6 @@
         "universe": "main",
         "isMajorCrossover": false,
         "isKeyIssue": true
-    },
-    {
-        "id": "asm-34",
-        "seriesId": "asm",
-        "issueNumber": "34",
-        "title": "The Thrill of the Hunt",
-        "releaseDate": "1965-12-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-35",
-        "seriesId": "asm",
-        "issueNumber": "35",
-        "title": "The Molten Man Regrets...!",
-        "releaseDate": "1966-01-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-36",
-        "seriesId": "asm",
-        "issueNumber": "36",
-        "title": "When Falls the Meteor!",
-        "releaseDate": "1966-02-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-37",
-        "seriesId": "asm",
-        "issueNumber": "37",
-        "title": "Once Upon A Time, There Was A Robot...!",
-        "releaseDate": "1966-03-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-38",
-        "seriesId": "asm",
-        "issueNumber": "38",
-        "title": "Just A Guy Named Joe!",
-        "releaseDate": "1966-04-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
     },
     {
         "id": "asm-39",
@@ -437,7 +267,7 @@
         "releaseDate": "1966-09-01",
         "universe": "main",
         "isMajorCrossover": false,
-        "isKeyIssue": false
+        "isKeyIssue": true
     },
     {
         "id": "asm-44",
@@ -567,116 +397,6 @@
         "releaseDate": "1967-10-01",
         "universe": "main",
         "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-57",
-        "seriesId": "asm",
-        "issueNumber": "57",
-        "title": "The Coming of Ka-zar!",
-        "releaseDate": "1967-11-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-58",
-        "seriesId": "asm",
-        "issueNumber": "58",
-        "title": "To Kill A Spider-Man!",
-        "releaseDate": "1967-12-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-59",
-        "seriesId": "asm",
-        "issueNumber": "59",
-        "title": "The Brand of the Brainwasher!",
-        "releaseDate": "1968-01-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-60",
-        "seriesId": "asm",
-        "issueNumber": "60",
-        "title": "O, Bitter Victory!",
-        "releaseDate": "1968-02-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-61",
-        "seriesId": "asm",
-        "issueNumber": "61",
-        "title": "What a Tangled Web We Weave!",
-        "releaseDate": "1968-03-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-62",
-        "seriesId": "asm",
-        "issueNumber": "62",
-        "title": "Make Way for... Medusa!",
-        "releaseDate": "1968-04-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-63",
-        "seriesId": "asm",
-        "issueNumber": "63",
-        "title": "Wings in the Night!",
-        "releaseDate": "1968-05-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-64",
-        "seriesId": "asm",
-        "issueNumber": "64",
-        "title": "The Vulture's Prey!",
-        "releaseDate": "1968-06-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-65",
-        "seriesId": "asm",
-        "issueNumber": "65",
-        "title": "The Impossible Escape!",
-        "releaseDate": "1968-07-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-66",
-        "seriesId": "asm",
-        "issueNumber": "66",
-        "title": "The Madness of Mysterio!",
-        "releaseDate": "1968-08-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": true
-    },
-    {
-        "id": "asm-67",
-        "seriesId": "asm",
-        "issueNumber": "67",
-        "title": "To Squash A Spider!",
-        "releaseDate": "1968-09-01",
-        "universe": "main",
-        "isMajorCrossover": false,
         "isKeyIssue": true
     },
     {
@@ -710,24 +430,14 @@
         "isKeyIssue": true
     },
     {
-        "id": "asm-71",
-        "seriesId": "asm",
-        "issueNumber": "71",
-        "title": "The Speedster and The Spider!",
-        "releaseDate": "1969-01-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
         "id": "asm-72",
         "seriesId": "asm",
         "issueNumber": "72",
-        "title": "Rocked by..the Shocker!",
-        "releaseDate": "1969-02-01",
+        "title": "Rocked by...the Shocker!",
+        "releaseDate": "1968-12-01",
         "universe": "main",
         "isMajorCrossover": false,
-        "isKeyIssue": false
+        "isKeyIssue": true
     },
     {
         "id": "asm-73",
@@ -800,76 +510,6 @@
         "isKeyIssue": true
     },
     {
-        "id": "asm-80",
-        "seriesId": "asm",
-        "issueNumber": "80",
-        "title": "On the Trail of the Chameleon!",
-        "releaseDate": "1969-10-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-81",
-        "seriesId": "asm",
-        "issueNumber": "81",
-        "title": "The Coming of the Kangaroo!",
-        "releaseDate": "1969-11-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-82",
-        "seriesId": "asm",
-        "issueNumber": "82",
-        "title": "And then Came Electro!",
-        "releaseDate": "1969-12-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-83",
-        "seriesId": "asm",
-        "issueNumber": "83",
-        "title": "The Schemer!",
-        "releaseDate": "1970-01-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-84",
-        "seriesId": "asm",
-        "issueNumber": "84",
-        "title": "The Kingpin Strikes Back!",
-        "releaseDate": "1970-02-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-85",
-        "seriesId": "asm",
-        "issueNumber": "85",
-        "title": "And now...the Secret of the Schemer!",
-        "releaseDate": "1970-03-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-86",
-        "seriesId": "asm",
-        "issueNumber": "86",
-        "title": "Beware..The Black Widow!",
-        "releaseDate": "1970-04-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
         "id": "asm-87",
         "seriesId": "asm",
         "issueNumber": "87",
@@ -887,7 +527,7 @@
         "releaseDate": "1970-06-01",
         "universe": "main",
         "isMajorCrossover": false,
-        "isKeyIssue": false
+        "isKeyIssue": true
     },
     {
         "id": "asm-89",
@@ -910,16 +550,6 @@
         "isKeyIssue": true
     },
     {
-        "id": "asm-91",
-        "seriesId": "asm",
-        "issueNumber": "91",
-        "title": "To Smash the Spider!",
-        "releaseDate": "1970-09-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
         "id": "asm-92",
         "seriesId": "asm",
         "issueNumber": "92",
@@ -928,36 +558,6 @@
         "universe": "main",
         "isMajorCrossover": true,
         "isKeyIssue": true
-    },
-    {
-        "id": "asm-93",
-        "seriesId": "asm",
-        "issueNumber": "93",
-        "title": "The Lady And --- The Prowler!",
-        "releaseDate": "1970-11-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-94",
-        "seriesId": "asm",
-        "issueNumber": "94",
-        "title": "On Wings of Death!",
-        "releaseDate": "1970-12-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-95",
-        "seriesId": "asm",
-        "issueNumber": "95",
-        "title": "Trap for a Terrorist!",
-        "releaseDate": "1971-01-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
     },
     {
         "id": "asm-96",
@@ -990,16 +590,6 @@
         "isKeyIssue": true
     },
     {
-        "id": "asm-99",
-        "seriesId": "asm",
-        "issueNumber": "99",
-        "title": "A Day in the Life of...!",
-        "releaseDate": "1971-05-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
         "id": "asm-100",
         "seriesId": "asm",
         "issueNumber": "100",
@@ -1030,66 +620,6 @@
         "isKeyIssue": true
     },
     {
-        "id": "asm-103",
-        "seriesId": "asm",
-        "issueNumber": "103",
-        "title": "Walk The Savage Land!",
-        "releaseDate": "1971-09-01",
-        "universe": "main",
-        "isMajorCrossover": true,
-        "isKeyIssue": true
-    },
-    {
-        "id": "asm-104",
-        "seriesId": "asm",
-        "issueNumber": "104",
-        "title": "The Beauty And The Brute!",
-        "releaseDate": "1971-10-01",
-        "universe": "main",
-        "isMajorCrossover": true,
-        "isKeyIssue": true
-    },
-    {
-        "id": "asm-105",
-        "seriesId": "asm",
-        "issueNumber": "105",
-        "title": "The Spider Slayer!",
-        "releaseDate": "1971-11-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-106",
-        "seriesId": "asm",
-        "issueNumber": "106",
-        "title": "Squash Goes the Spider!",
-        "releaseDate": "1971-12-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-107",
-        "seriesId": "asm",
-        "issueNumber": "107",
-        "title": "Spidey Smashes Thru!",
-        "releaseDate": "1972-01-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-108",
-        "seriesId": "asm",
-        "issueNumber": "108",
-        "title": "Vengeance from Vietnam!",
-        "releaseDate": "1972-02-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
         "id": "asm-109",
         "seriesId": "asm",
         "issueNumber": "109",
@@ -1097,36 +627,6 @@
         "releaseDate": "1972-03-01",
         "universe": "main",
         "isMajorCrossover": true,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-110",
-        "seriesId": "asm",
-        "issueNumber": "110",
-        "title": "The Birth Of...The Gibbon!",
-        "releaseDate": "1972-04-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-111",
-        "seriesId": "asm",
-        "issueNumber": "111",
-        "title": "To Stalk A Spider!",
-        "releaseDate": "1972-05-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-112",
-        "seriesId": "asm",
-        "issueNumber": "112",
-        "title": "Spidey Cops Out!",
-        "releaseDate": "1972-06-01",
-        "universe": "main",
-        "isMajorCrossover": false,
         "isKeyIssue": false
     },
     {
@@ -1158,36 +658,6 @@
         "universe": "main",
         "isMajorCrossover": false,
         "isKeyIssue": true
-    },
-    {
-        "id": "asm-116",
-        "seriesId": "asm",
-        "issueNumber": "116",
-        "title": "Suddenly...The Smasher!",
-        "releaseDate": "1972-10-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-117",
-        "seriesId": "asm",
-        "issueNumber": "117",
-        "title": "The Deadly Designs Of The Disruptor!",
-        "releaseDate": "1972-11-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-118",
-        "seriesId": "asm",
-        "issueNumber": "118",
-        "title": "Countdown to Chaos!",
-        "releaseDate": "1972-12-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
     },
     {
         "id": "asm-119",
@@ -1260,36 +730,6 @@
         "isKeyIssue": true
     },
     {
-        "id": "asm-126",
-        "seriesId": "asm",
-        "issueNumber": "126",
-        "title": "The Kangaroo Bounces Back!",
-        "releaseDate": "1973-08-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-127",
-        "seriesId": "asm",
-        "issueNumber": "127",
-        "title": "The Dark Wings of Death!",
-        "releaseDate": "1973-09-01",
-        "universe": "main",
-        "isMajorCrossover": true,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-128",
-        "seriesId": "asm",
-        "issueNumber": "128",
-        "title": "The Vulture Hangs High!",
-        "releaseDate": "1973-10-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
         "id": "asm-129",
         "seriesId": "asm",
         "issueNumber": "129",
@@ -1300,16 +740,6 @@
         "isKeyIssue": true
     },
     {
-        "id": "asm-130",
-        "seriesId": "asm",
-        "issueNumber": "130",
-        "title": "Betrayed!",
-        "releaseDate": "1973-12-01",
-        "universe": "main",
-        "isMajorCrossover": true,
-        "isKeyIssue": false
-    },
-    {
         "id": "asm-131",
         "seriesId": "asm",
         "issueNumber": "131",
@@ -1318,26 +748,6 @@
         "universe": "main",
         "isMajorCrossover": false,
         "isKeyIssue": true
-    },
-    {
-        "id": "asm-132",
-        "seriesId": "asm",
-        "issueNumber": "132",
-        "title": "The Master Plan of The Molten Man!",
-        "releaseDate": "1974-02-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-133",
-        "seriesId": "asm",
-        "issueNumber": "133",
-        "title": "The Molten Man Breaks Out!",
-        "releaseDate": "1974-03-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
     },
     {
         "id": "asm-134",
@@ -1380,36 +790,6 @@
         "isKeyIssue": true
     },
     {
-        "id": "asm-138",
-        "seriesId": "asm",
-        "issueNumber": "138",
-        "title": "Madness Means..The Mindworm!",
-        "releaseDate": "1974-08-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-139",
-        "seriesId": "asm",
-        "issueNumber": "139",
-        "title": "Day Of The Grizzly!",
-        "releaseDate": "1974-09-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-140",
-        "seriesId": "asm",
-        "issueNumber": "140",
-        "title": "...And One Will Fall!",
-        "releaseDate": "1974-10-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
         "id": "asm-141",
         "seriesId": "asm",
         "issueNumber": "141",
@@ -1418,26 +798,6 @@
         "universe": "main",
         "isMajorCrossover": false,
         "isKeyIssue": true
-    },
-    {
-        "id": "asm-142",
-        "seriesId": "asm",
-        "issueNumber": "142",
-        "title": "Dead Man's Bluff!",
-        "releaseDate": "1974-12-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-143",
-        "seriesId": "asm",
-        "issueNumber": "143",
-        "title": "...And The Wind Cries: Cyclone!",
-        "releaseDate": "1975-01-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
     },
     {
         "id": "asm-144",
@@ -1518,46 +878,6 @@
         "universe": "main",
         "isMajorCrossover": false,
         "isKeyIssue": true
-    },
-    {
-        "id": "asm-152",
-        "seriesId": "asm",
-        "issueNumber": "152",
-        "title": "Shattered by the Shocker!",
-        "releaseDate": "1975-10-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-153",
-        "seriesId": "asm",
-        "issueNumber": "153",
-        "title": "The Longest Hundred Yards!",
-        "releaseDate": "1975-11-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-154",
-        "seriesId": "asm",
-        "issueNumber": "154",
-        "title": "The Sandman Always Strikes Twice!",
-        "releaseDate": "1975-12-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
-    },
-    {
-        "id": "asm-155",
-        "seriesId": "asm",
-        "issueNumber": "155",
-        "title": "Whodunit!",
-        "releaseDate": "1976-01-01",
-        "universe": "main",
-        "isMajorCrossover": false,
-        "isKeyIssue": false
     },
 
     

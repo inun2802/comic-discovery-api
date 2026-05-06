@@ -119,12 +119,11 @@
         "description": "The Black Cat, one of Spider-Man's most puzzling love interests",
         "publisherId": "marvel"
     },
-
     {
-    "id": "doctor-doom",
-    "name": "Doctor Doom",
-    "description": "Victor Von Doom, ruler of Latveria and one of Marvel's greatest villains",
-    "publisherId": "marvel"
+        "id": "doctor-doom",
+        "name": "Doctor Doom",
+        "description": "Victor Von Doom, ruler of Latveria and one of Marvel's greatest villains",
+        "publisherId": "marvel"
     },
     {
         "id": "lizard",

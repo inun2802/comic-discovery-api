@@ -41,7 +41,6 @@
         "issueId": "asm-98", 
         "order": 3 
     },
-
     { 
         "storyArcId": "six-armed-saga",        
         "issueId": "asm-100", 
@@ -57,7 +56,6 @@
         "issueId": "asm-102", 
         "order": 3 
     },
-
     { 
         "storyArcId": "kingpin-tablet-saga",   
         "issueId": "asm-68", 
@@ -115,33 +113,18 @@
     },
     { 
         "storyArcId": "hammerhead-doc-ock",    
-        "issueId": "asm-112", 
-        "order": 1 
-    },
-    { 
-        "storyArcId": "hammerhead-doc-ock",    
         "issueId": "asm-113", 
-        "order": 2 
+        "order": 1
     },
     { 
         "storyArcId": "hammerhead-doc-ock",    
         "issueId": "asm-114", 
-        "order": 3 
+        "order": 2
     },
     { 
         "storyArcId": "hammerhead-doc-ock",    
         "issueId": "asm-115", 
-        "order": 4 
-    },
-    { 
-        "storyArcId": "spider-hulk",           
-        "issueId": "asm-119", 
-        "order": 1 
-    },
-    { 
-        "storyArcId": "spider-hulk",           
-        "issueId": "asm-120", 
-        "order": 2 
+        "order": 3 
     },
     { 
         "storyArcId": "night-gwen-stacy-died", 
@@ -203,50 +186,19 @@
         "issueId": "asm-151", 
         "order": 8 
     },
-
     { 
-        "storyArcId": "punisher-first",        
-        "issueId": "asm-129", 
-        "order": 1 
-    },
-    { 
-        "storyArcId": "kingpin-rise",          
+        "storyArcId": "spiderman-no-more",          
         "issueId": "asm-50",  
         "order": 1 
     },
     { 
-        "storyArcId": "kingpin-rise",          
+        "storyArcId": "spiderman-no-more",          
         "issueId": "asm-51",  
         "order": 2 
     },
     { 
-        "storyArcId": "kingpin-rise",          
+        "storyArcId": "spiderman-no-more",          
         "issueId": "asm-52",  
-        "order": 3 
-    },
-    { 
-        "storyArcId": "prowler-debut",         
-        "issueId": "asm-78",  
-        "order": 1 
-    },
-    { 
-        "storyArcId": "prowler-debut",         
-        "issueId": "asm-79",  
-        "order": 2 
-    },
-    { 
-        "storyArcId": "gwen-stacy-clone",      
-        "issueId": "asm-144", 
-        "order": 1 
-    },
-    { 
-        "storyArcId": "gwen-stacy-clone",      
-        "issueId": "asm-145", 
-        "order": 2 
-    },
-    { 
-        "storyArcId": "gwen-stacy-clone",      
-        "issueId": "asm-146", 
         "order": 3 
     }
 ]
